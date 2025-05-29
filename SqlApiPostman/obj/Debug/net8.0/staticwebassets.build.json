@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "YBfswJhlSk6evXo2QtTxEnCoS++QrQ52pG/nc7ID3hU=",
+  "Source": "SqlApiPostman",
+  "BasePath": "_content/SqlApiPostman",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
