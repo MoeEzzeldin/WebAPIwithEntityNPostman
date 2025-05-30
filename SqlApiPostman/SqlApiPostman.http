@@ -1,6 +1,6 @@
 @SqlApiPostman_HostAddress = http://localhost:5029
 
-GET {{SqlApiPostman_HostAddress}}/weatherforecast/
+GET {{SqlApiPostman_HostAddress}}api/Product/
 Accept: application/json
 
 ###

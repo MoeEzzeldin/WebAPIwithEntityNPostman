@@ -1,69 +1,77 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\",
+  "WorkspaceRootPath": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|c:\\users\\ahmed\\workspace\\repositories\\practice\\sqlapipostman\\sqlapipostman\\repos\\repo\\productrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|solutionrelative:sqlapipostman\\repos\\repo\\productrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|c:\\users\\ahmed\\workspace\\repositories\\practice\\sqlapipostman\\sqlapipostman\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|c:\\users\\ahmed\\workspace\\repositories\\webapiwithentitynpostman\\sqlapipostman\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|solutionrelative:sqlapipostman\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|c:\\users\\ahmed\\workspace\\repositories\\practice\\sqlapipostman\\sqlapipostman\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|solutionrelative:sqlapipostman\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|c:\\users\\ahmed\\workspace\\repositories\\webapiwithentitynpostman\\sqlapipostman\\repos\\repo\\productrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|solutionrelative:sqlapipostman\\repos\\repo\\productrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|c:\\users\\ahmed\\workspace\\repositories\\practice\\sqlapipostman\\sqlapipostman\\migrations\\20250529205810_intialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|solutionrelative:sqlapipostman\\migrations\\20250529205810_intialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|c:\\users\\ahmed\\workspace\\repositories\\practice\\sqlapipostman\\sqlapipostman\\repos\\irepo\\icategoryrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|solutionrelative:sqlapipostman\\repos\\irepo\\icategoryrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|c:\\users\\ahmed\\workspace\\repositories\\practice\\sqlapipostman\\sqlapipostman\\repos\\repo\\categoryrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|solutionrelative:sqlapipostman\\repos\\repo\\categoryrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|c:\\users\\ahmed\\workspace\\repositories\\practice\\sqlapipostman\\sqlapipostman\\repos\\irepo\\iproductrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|solutionrelative:sqlapipostman\\repos\\irepo\\iproductrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|c:\\users\\ahmed\\workspace\\repositories\\practice\\sqlapipostman\\sqlapipostman\\models\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|solutionrelative:sqlapipostman\\models\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|c:\\users\\ahmed\\workspace\\repositories\\practice\\sqlapipostman\\sqlapipostman\\sqlapipostman.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|solutionrelative:sqlapipostman\\sqlapipostman.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|c:\\users\\ahmed\\workspace\\repositories\\practice\\sqlapipostman\\sqlapipostman\\data\\myappdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|solutionrelative:sqlapipostman\\data\\myappdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|c:\\users\\ahmed\\workspace\\repositories\\practice\\sqlapipostman\\sqlapipostman\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|solutionrelative:sqlapipostman\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|c:\\users\\ahmed\\workspace\\repositories\\practice\\sqlapipostman\\sqlapipostman\\data\\mappings\\categorymapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|solutionrelative:sqlapipostman\\data\\mappings\\categorymapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|c:\\users\\ahmed\\workspace\\repositories\\practice\\sqlapipostman\\sqlapipostman\\data\\mappings\\productmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|solutionrelative:sqlapipostman\\data\\mappings\\productmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|c:\\users\\ahmed\\workspace\\repositories\\practice\\sqlapipostman\\sqlapipostman\\models\\dtos\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|c:\\users\\ahmed\\workspace\\repositories\\webapiwithentitynpostman\\sqlapipostman\\models\\dtos\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|solutionrelative:sqlapipostman\\models\\dtos\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|c:\\users\\ahmed\\workspace\\repositories\\practice\\sqlapipostman\\sqlapipostman\\models\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|c:\\users\\ahmed\\workspace\\repositories\\webapiwithentitynpostman\\sqlapipostman\\models\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|solutionrelative:sqlapipostman\\models\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|c:\\users\\ahmed\\workspace\\repositories\\webapiwithentitynpostman\\sqlapipostman\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|solutionrelative:sqlapipostman\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|c:\\users\\ahmed\\workspace\\repositories\\webapiwithentitynpostman\\sqlapipostman\\repos\\repo\\categoryrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|solutionrelative:sqlapipostman\\repos\\repo\\categoryrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|c:\\users\\ahmed\\workspace\\repositories\\webapiwithentitynpostman\\sqlapipostman\\repos\\irepo\\iproductrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|solutionrelative:sqlapipostman\\repos\\irepo\\iproductrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|c:\\users\\ahmed\\workspace\\repositories\\webapiwithentitynpostman\\sqlapipostman\\repos\\irepo\\icategoryrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|solutionrelative:sqlapipostman\\repos\\irepo\\icategoryrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|c:\\users\\ahmed\\workspace\\repositories\\webapiwithentitynpostman\\sqlapipostman\\data\\mappings\\productmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|solutionrelative:sqlapipostman\\data\\mappings\\productmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|c:\\users\\ahmed\\workspace\\repositories\\webapiwithentitynpostman\\sqlapipostman\\data\\mappings\\categorymapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|solutionrelative:sqlapipostman\\data\\mappings\\categorymapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|c:\\users\\ahmed\\workspace\\repositories\\webapiwithentitynpostman\\sqlapipostman\\data\\myappdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|solutionrelative:sqlapipostman\\data\\myappdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|c:\\users\\ahmed\\workspace\\repositories\\webapiwithentitynpostman\\sqlapipostman\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|solutionrelative:sqlapipostman\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|c:\\users\\ahmed\\workspace\\repositories\\webapiwithentitynpostman\\sqlapipostman\\sqlapipostman.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|solutionrelative:sqlapipostman\\sqlapipostman.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|c:\\users\\ahmed\\workspace\\repositories\\webapiwithentitynpostman\\sqlapipostman\\migrations\\20250529205810_intialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|solutionrelative:sqlapipostman\\migrations\\20250529205810_intialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|c:\\users\\ahmed\\workspace\\repositories\\webapiwithentitynpostman\\sqlapipostman\\sqlapipostman.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|solutionrelative:sqlapipostman\\sqlapipostman.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|c:\\users\\ahmed\\workspace\\repositories\\webapiwithentitynpostman\\sqlapipostman\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|solutionrelative:sqlapipostman\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|c:\\users\\ahmed\\workspace\\repositories\\webapiwithentitynpostman\\sqlapipostman\\models\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|solutionrelative:sqlapipostman\\models\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|c:\\users\\ahmed\\workspace\\repositories\\practice\\sqlapipostman\\sqlapipostman\\models\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|c:\\users\\ahmed\\workspace\\repositories\\webapiwithentitynpostman\\sqlapipostman\\models\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F26AA6E2-A026-41DE-B2F4-16E95A702148}|SqlApiPostman\\SqlApiPostman.csproj|solutionrelative:sqlapipostman\\models\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -73,8 +81,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 306,
-          "SelectedChildIndex": 4,
+          "DockedWidth": 297,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,102 +90,114 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "20250529205810_IntialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\Migrations\\20250529205810_IntialCreate.cs",
-              "RelativeDocumentMoniker": "SqlApiPostman\\Migrations\\20250529205810_IntialCreate.cs",
-              "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\Migrations\\20250529205810_IntialCreate.cs",
-              "RelativeToolTip": "SqlApiPostman\\Migrations\\20250529205810_IntialCreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T20:58:10.574Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CategoryRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\Repos\\Repo\\CategoryRepo.cs",
-              "RelativeDocumentMoniker": "SqlApiPostman\\Repos\\Repo\\CategoryRepo.cs",
-              "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\Repos\\Repo\\CategoryRepo.cs",
-              "RelativeToolTip": "SqlApiPostman\\Repos\\Repo\\CategoryRepo.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAEkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T20:55:44.482Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\Program.cs",
-              "RelativeDocumentMoniker": "SqlApiPostman\\Program.cs",
-              "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\Program.cs",
-              "RelativeToolTip": "SqlApiPostman\\Program.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAgwEkAAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T20:26:39.908Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProductRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\Repos\\Repo\\ProductRepo.cs",
-              "RelativeDocumentMoniker": "SqlApiPostman\\Repos\\Repo\\ProductRepo.cs",
-              "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\Repos\\Repo\\ProductRepo.cs",
-              "RelativeToolTip": "SqlApiPostman\\Repos\\Repo\\ProductRepo.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwBgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T20:52:26.339Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\Controllers\\ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "SqlApiPostman\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\Controllers\\ProductController.cs",
               "RelativeToolTip": "SqlApiPostman\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAQwDMAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAUwCQAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-29T20:59:05.425Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\Models\\DTOs\\ProductDTO.cs",
+              "RelativeDocumentMoniker": "SqlApiPostman\\Models\\DTOs\\ProductDTO.cs",
+              "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\Models\\DTOs\\ProductDTO.cs",
+              "RelativeToolTip": "SqlApiPostman\\Models\\DTOs\\ProductDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAiwAIAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T20:21:15.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CategoryDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\Models\\DTOs\\CategoryDTO.cs",
+              "RelativeDocumentMoniker": "SqlApiPostman\\Models\\DTOs\\CategoryDTO.cs",
+              "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\Models\\DTOs\\CategoryDTO.cs",
+              "RelativeToolTip": "SqlApiPostman\\Models\\DTOs\\CategoryDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T20:22:11.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\Program.cs",
+              "RelativeDocumentMoniker": "SqlApiPostman\\Program.cs",
+              "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\Program.cs",
+              "RelativeToolTip": "SqlApiPostman\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T20:26:39.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CategoryRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\Repos\\Repo\\CategoryRepo.cs",
+              "RelativeDocumentMoniker": "SqlApiPostman\\Repos\\Repo\\CategoryRepo.cs",
+              "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\Repos\\Repo\\CategoryRepo.cs",
+              "RelativeToolTip": "SqlApiPostman\\Repos\\Repo\\CategoryRepo.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T20:55:44.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "ICategoryRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\Repos\\IRepo\\ICategoryRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\Repos\\IRepo\\ICategoryRepo.cs",
               "RelativeDocumentMoniker": "SqlApiPostman\\Repos\\IRepo\\ICategoryRepo.cs",
-              "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\Repos\\IRepo\\ICategoryRepo.cs",
+              "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\Repos\\IRepo\\ICategoryRepo.cs",
               "RelativeToolTip": "SqlApiPostman\\Repos\\IRepo\\ICategoryRepo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAEAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-29T20:45:43.853Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IProductRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\Repos\\IRepo\\IProductRepo.cs",
-              "RelativeDocumentMoniker": "SqlApiPostman\\Repos\\IRepo\\IProductRepo.cs",
-              "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\Repos\\IRepo\\IProductRepo.cs",
-              "RelativeToolTip": "SqlApiPostman\\Repos\\IRepo\\IProductRepo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "ProductMapping.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\Data\\Mappings\\ProductMapping.cs",
+              "RelativeDocumentMoniker": "SqlApiPostman\\Data\\Mappings\\ProductMapping.cs",
+              "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\Data\\Mappings\\ProductMapping.cs",
+              "RelativeToolTip": "SqlApiPostman\\Data\\Mappings\\ProductMapping.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T20:45:08.208Z",
+              "WhenOpened": "2025-05-29T20:23:44.234Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
+              "Title": "MyAppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\Data\\MyAppDbContext.cs",
+              "RelativeDocumentMoniker": "SqlApiPostman\\Data\\MyAppDbContext.cs",
+              "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\Data\\MyAppDbContext.cs",
+              "RelativeToolTip": "SqlApiPostman\\Data\\MyAppDbContext.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T20:23:12.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "CategoryMapping.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\Data\\Mappings\\CategoryMapping.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\Data\\Mappings\\CategoryMapping.cs",
               "RelativeDocumentMoniker": "SqlApiPostman\\Data\\Mappings\\CategoryMapping.cs",
-              "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\Data\\Mappings\\CategoryMapping.cs",
+              "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\Data\\Mappings\\CategoryMapping.cs",
               "RelativeToolTip": "SqlApiPostman\\Data\\Mappings\\CategoryMapping.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -186,106 +206,119 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MyAppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\Data\\MyAppDbContext.cs",
-              "RelativeDocumentMoniker": "SqlApiPostman\\Data\\MyAppDbContext.cs",
-              "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\Data\\MyAppDbContext.cs",
-              "RelativeToolTip": "SqlApiPostman\\Data\\MyAppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T20:23:12.245Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ProductDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\Models\\DTOs\\ProductDTO.cs",
-              "RelativeDocumentMoniker": "SqlApiPostman\\Models\\DTOs\\ProductDTO.cs",
-              "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\Models\\DTOs\\ProductDTO.cs",
-              "RelativeToolTip": "SqlApiPostman\\Models\\DTOs\\ProductDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAiwAwAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T20:21:15.294Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SqlApiPostman",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\SqlApiPostman.csproj",
-              "RelativeDocumentMoniker": "SqlApiPostman\\SqlApiPostman.csproj",
-              "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\SqlApiPostman.csproj",
-              "RelativeToolTip": "SqlApiPostman\\SqlApiPostman.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-29T20:26:09.231Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ProductMapping.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\Data\\Mappings\\ProductMapping.cs",
-              "RelativeDocumentMoniker": "SqlApiPostman\\Data\\Mappings\\ProductMapping.cs",
-              "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\Data\\Mappings\\ProductMapping.cs",
-              "RelativeToolTip": "SqlApiPostman\\Data\\Mappings\\ProductMapping.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T20:23:44.234Z",
-              "EditorCaption": ""
+              "DocumentIndex": 11,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "SqlApiPostman\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\Properties\\launchSettings.json",
+              "RelativeToolTip": "SqlApiPostman\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-29T23:00:23.005Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "CategoryDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\Models\\DTOs\\CategoryDTO.cs",
-              "RelativeDocumentMoniker": "SqlApiPostman\\Models\\DTOs\\CategoryDTO.cs",
-              "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\Models\\DTOs\\CategoryDTO.cs",
-              "RelativeToolTip": "SqlApiPostman\\Models\\DTOs\\CategoryDTO.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAiwA4AAAAAAAAAAAAAAA==",
+              "Title": "20250529205810_IntialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\Migrations\\20250529205810_IntialCreate.cs",
+              "RelativeDocumentMoniker": "SqlApiPostman\\Migrations\\20250529205810_IntialCreate.cs",
+              "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\Migrations\\20250529205810_IntialCreate.cs",
+              "RelativeToolTip": "SqlApiPostman\\Migrations\\20250529205810_IntialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T20:22:11.263Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T20:58:10.574Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\appsettings.json",
-              "RelativeDocumentMoniker": "SqlApiPostman\\appsettings.json",
-              "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\appsettings.json",
-              "RelativeToolTip": "SqlApiPostman\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-29T20:00:36.841Z",
-              "EditorCaption": ""
+              "DocumentIndex": 12,
+              "Title": "SqlApiPostman.http",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\SqlApiPostman.http",
+              "RelativeDocumentMoniker": "SqlApiPostman\\SqlApiPostman.http",
+              "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\SqlApiPostman.http",
+              "RelativeToolTip": "SqlApiPostman\\SqlApiPostman.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-05-29T22:59:32.993Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\Models\\Entities\\Category.cs",
-              "RelativeDocumentMoniker": "SqlApiPostman\\Models\\Entities\\Category.cs",
-              "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\Models\\Entities\\Category.cs",
-              "RelativeToolTip": "SqlApiPostman\\Models\\Entities\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvw0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T20:19:32.246Z",
-              "EditorCaption": ""
+              "Title": "SqlApiPostman.csproj",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\SqlApiPostman.csproj",
+              "RelativeDocumentMoniker": "SqlApiPostman\\SqlApiPostman.csproj",
+              "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\SqlApiPostman.csproj",
+              "RelativeToolTip": "SqlApiPostman\\SqlApiPostman.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-29T20:26:09.231Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\appsettings.json",
+              "RelativeDocumentMoniker": "SqlApiPostman\\appsettings.json",
+              "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\appsettings.json",
+              "RelativeToolTip": "SqlApiPostman\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-29T20:00:36.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\Models\\Entities\\Category.cs",
+              "RelativeDocumentMoniker": "SqlApiPostman\\Models\\Entities\\Category.cs",
+              "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\Models\\Entities\\Category.cs",
+              "RelativeToolTip": "SqlApiPostman\\Models\\Entities\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvw0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T20:19:32.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\Models\\Entities\\Product.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\Models\\Entities\\Product.cs",
               "RelativeDocumentMoniker": "SqlApiPostman\\Models\\Entities\\Product.cs",
-              "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\Models\\Entities\\Product.cs",
+              "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\Models\\Entities\\Product.cs",
               "RelativeToolTip": "SqlApiPostman\\Models\\Entities\\Product.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAYwAwAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-29T20:18:55.629Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 315,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IProductRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\Repos\\IRepo\\IProductRepo.cs",
+              "RelativeDocumentMoniker": "SqlApiPostman\\Repos\\IRepo\\IProductRepo.cs",
+              "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\Repos\\IRepo\\IProductRepo.cs",
+              "RelativeToolTip": "SqlApiPostman\\Repos\\IRepo\\IProductRepo.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T20:45:08.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\Repos\\Repo\\ProductRepo.cs",
+              "RelativeDocumentMoniker": "SqlApiPostman\\Repos\\Repo\\ProductRepo.cs",
+              "ToolTip": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\Repos\\Repo\\ProductRepo.cs",
+              "RelativeToolTip": "SqlApiPostman\\Repos\\Repo\\ProductRepo.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAqwBcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T20:52:26.339Z",
               "EditorCaption": ""
             }
           ]

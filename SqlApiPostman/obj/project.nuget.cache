@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "b4LnbfoP2D4=",
+  "dgSpecHash": "88qRkNi6Jwg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\SqlApiPostman.csproj",
+  "projectFilePath": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\SqlApiPostman.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ahmed\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\Ahmed\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",

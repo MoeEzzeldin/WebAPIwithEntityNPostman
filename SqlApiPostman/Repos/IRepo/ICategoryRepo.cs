@@ -1,14 +1,14 @@
 ﻿using SqlApiPostman.Models.Entities;
-
+using SqlApiPostman.Models.DTOs;
 namespace SqlApiPostman.Repos.IRepo
 {
     public interface ICategoryRepo
     {
-        Task<IEnumerable<Category>> GetAllCategoriesAsync();
-        Task<Category> GetCategoryByIdAsync(Guid id);
-        Task AddCategoryAsync(Category category);
-        Task UpdateCategoryAsync(Category category);
+        Task<IEnumerable<CategoryDTO>> GetAllCategoriesAsync();
+        Task<CategoryDTO> GetCategoryByIdAsync(Guid id);
+        Task AddCategoryAsync(CategoryDTO category);
+        Task UpdateCategoryAsync(CategoryDTO category);
         Task DeleteCategoryAsync(Guid id);
-        Task<IEnumerable<Category>> GetCategoriesWithProductsAsync();
+        Task<IEnumerable<CategoryDTO>> GetCategoriesWithProductsAsync();
     }
 }

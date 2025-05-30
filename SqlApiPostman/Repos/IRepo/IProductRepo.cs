@@ -1,4 +1,5 @@
 ﻿using SqlApiPostman.Models.Entities;
+using SqlApiPostman.Models.DTOs;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
@@ -8,10 +9,10 @@ namespace SqlApiPostman.Repos.IRepo
     public interface IProductRepo
     {
         // Define methods for product repository
-        Task<IEnumerable<Product>> GetAllProductsAsync();
-        Task<Product> GetProductByIdAsync(int id);
-        Task AddProductAsync(Product product);
-        Task UpdateProductAsync(Product product);
-        Task DeleteProductAsync(int id);
+        Task <IEnumerable<ProductDTO>> GetAllProductsAsync();
+        Task <ProductDTO> GetProductByIdAsync(int id);
+        Task <int> AddProductAsync(ProductDTO product);
+        Task <int> UpdateProductAsync(ProductDTO product);
+        Task <bool> DeleteProductAsync(int id);
     }
 }

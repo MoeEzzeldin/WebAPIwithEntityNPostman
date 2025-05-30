@@ -31,7 +31,7 @@ builder.Services.AddDbContext<MyAppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddScoped<IProductRepo, ProductRepo>();
-builder.Services.AddScoped<ICategoryRepo, CategoryRepo>();
+//builder.Services.AddScoped<ICategoryRepo, CategoryRepo>();
 
 builder.Services.AddControllers();
 //// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -40,31 +40,7 @@ builder.Services.AddControllers();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-//if (app.Environment.IsDevelopment())
-//{
-//    app.UseSwagger();
-//    app.UseSwaggerUI();
-//}
-using (var scope = app.Services.CreateScope())
-{
-    var services = scope.ServiceProvider;
-    try
-    {
-        var productRepo = services.GetRequiredService<IProductRepo>();
-        var categoryRepo = services.GetRequiredService<ICategoryRepo>();
 
-        var products = productRepo.GetAllProductsAsync().Result;
-        var categories = categoryRepo.GetAllCategoriesAsync().Result;
-
-        Log.Information($"Application started with {products.Count()} products and {categories.Count()} categories.");
-        Console.WriteLine($"Application started with {products.Count()} products and {categories.Count()} categories.");
-    }
-    catch (Exception ex)
-    {
-        Log.Error(ex, "An error occurred while retrieving product and category counts");
-    }
-}
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

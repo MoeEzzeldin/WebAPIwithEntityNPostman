@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace SqlApiPostman.Repos.Repo
 {
-    public class CategoryRepo : ICategoryRepo
+    public class CategoryRepo 
     {
         private readonly MyAppDbContext _context;
         private readonly IMapper _mapper;

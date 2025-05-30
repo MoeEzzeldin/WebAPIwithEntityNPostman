@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SqlApiPostman.Repos.IRepo;
 using SqlApiPostman.Models.Entities;
+using SqlApiPostman.Models.DTOs;
+using AutoMapper;
 
 namespace SqlApiPostman.Controllers
 {
@@ -10,26 +12,42 @@ namespace SqlApiPostman.Controllers
     {
         private readonly ILogger<ProductController> _logger;
         private readonly IProductRepo _productRepo;
+        private readonly IMapper _mapper;
 
-        public ProductController(ILogger<ProductController> logger, IProductRepo productRepo)
+        public ProductController(ILogger<ProductController> logger, IProductRepo productRepo, IMapper mapper)
         {
             _logger = logger;
             _productRepo = productRepo;
+            _mapper = mapper;
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
+        public async Task<ActionResult<IEnumerable<ProductDTO>>> GetProducts()
         {
             _logger.LogInformation("Fetching all products");
-            var products = await _productRepo.GetAllProductsAsync();
-            return Ok(products);
+            try
+            {
+                 var products = await _productRepo.GetAllProductsAsync();
+                if (products == null || !products.Any())
+                {
+                    _logger.LogWarning("No products found.");
+                    return NotFound("No products available.");
+                }
+                _logger.LogInformation($"Found {products.Count()} products.");
+                return Ok(products);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while fetching products.");
+                return StatusCode(500, "Internal server error");
+            }
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Product>> GetProduct(int id)
+        public async Task<ActionResult<ProductDTO>> GetProduct(int id)
         {
             _logger.LogInformation($"Fetching details for product with ID: {id}.");
-            var product = await _productRepo.GetProductByIdAsync(id);
+            ProductDTO product = await _productRepo.GetProductByIdAsync(id);
             if (product == null)
             {
                 _logger.LogWarning($"Product with ID: {id} not found.");
@@ -39,46 +57,66 @@ namespace SqlApiPostman.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Product>> CreateProduct([FromBody] Product product)
+        public async Task<ActionResult<ProductDTO>> CreateProduct([FromBody] ProductDTO product)
         {
-            _logger.LogInformation($"Attempting to create new product: {product.Name}");
 
             if (!ModelState.IsValid)
             {
                 _logger.LogWarning("Invalid model state for product creation");
                 return BadRequest(ModelState);
             }
-
-            await _productRepo.AddProductAsync(product);
-            _logger.LogInformation($"Created new product with ID: {product.Id}");
-
-            return CreatedAtAction(nameof(GetProduct), new { id = product.Id }, product);
+            try
+            {
+                int result = await _productRepo.AddProductAsync(product);
+                _logger.LogInformation($"Created new product with ID: {product.Id}");
+                return CreatedAtAction(nameof(GetProduct), new { id = result }, product);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while creating a new product.");
+                return StatusCode(500, "Internal server error");
+            }
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateProduct(int id, [FromBody] Product product)
+        public async Task<IActionResult> UpdateProduct([FromBody] ProductDTO product)
         {
-            if (id != product.Id)
+            if (product == null)
             {
-                _logger.LogWarning($"Product ID mismatch: {id} does not match {product.Id}.");
-                return BadRequest("ID in URL doesn't match product ID");
+                _logger.LogError("Invalid product data for update.");
+                return BadRequest("Invalid product data.");
             }
-
-            if (!ModelState.IsValid)
+            try
             {
-                return BadRequest(ModelState);
+                _logger.LogInformation($"Updating product with ID: {product.Id}.");
+                int result = await _productRepo.UpdateProductAsync(product);
             }
-
-            _logger.LogInformation($"Updating product with ID: {id}.");
-            await _productRepo.UpdateProductAsync(product);
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while updating the product.");
+                return StatusCode(500, "Internal server error");
+            }
             return NoContent();
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProduct(int id)
         {
-            _logger.LogInformation($"Deleting product with ID: {id}.");
-            await _productRepo.DeleteProductAsync(id);
+            if (id <= 0)
+            {
+                _logger.LogError("Invalid product ID for deletion.");
+                return BadRequest("Invalid product ID.");
+            }
+            try
+            {
+                _logger.LogInformation($"Deleting product with ID: {id}.");
+                await _productRepo.DeleteProductAsync(id);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while deleting the product.");
+                return StatusCode(500, "Internal server error");
+            }
             return NoContent();
         }
     }

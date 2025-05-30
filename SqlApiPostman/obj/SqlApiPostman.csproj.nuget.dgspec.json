@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\SqlApiPostman.csproj": {}
+    "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\SqlApiPostman.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\SqlApiPostman.csproj": {
+    "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\SqlApiPostman.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\SqlApiPostman.csproj",
+        "projectUniqueName": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\SqlApiPostman.csproj",
         "projectName": "SqlApiPostman",
-        "projectPath": "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\SqlApiPostman.csproj",
+        "projectPath": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\SqlApiPostman.csproj",
         "packagesPath": "C:\\Users\\Ahmed\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ahmed\\workspace\\repositories\\Practice\\SqlApiPostman\\SqlApiPostman\\obj\\",
+        "outputPath": "C:\\Users\\Ahmed\\workspace\\repositories\\WebAPIwithEntityNPostman\\SqlApiPostman\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
