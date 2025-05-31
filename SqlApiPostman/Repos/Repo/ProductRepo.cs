@@ -91,12 +91,6 @@ namespace SqlApiPostman.Repos.Repo
 
             try
             {
-                if (!await _context.Products.AnyAsync(p => p.Id == productDTO.Id))
-                {
-                    _logger.LogWarning($"Product with ID: {productDTO.Id} not found for update.");
-                    return 0;
-                }
-
                 var productEntity = _mapper.Map<Product>(productDTO);
                 _context.Products.Update(productEntity);
                 int rowsAffected = await _context.SaveChangesAsync();
@@ -113,19 +107,15 @@ namespace SqlApiPostman.Repos.Repo
 
 
 
-        public async Task<bool> DeleteProductAsync(int id)
+        public async Task<bool> DeleteProductAsync(ProductDTO product)
         {
             try
             {
-                _logger.LogInformation($"Deleting product with ID: {id} from the database.");
-                var product = await _context.Products.FindAsync(id);
-                bool productExist = product != null;
-                if (productExist)
-                {
-                    _context.Products.Remove(product);
-                    return productExist = await _context.SaveChangesAsync() > 0;
-                }
-                return false;
+                _logger.LogInformation($"Deleting product with ID: {product.Id} from the database.");
+                Product productToDelete = _mapper.Map<Product>(product);
+                _context.Products.Remove(productToDelete);
+                return await _context.SaveChangesAsync() > 0;
+                
             }
             catch (Exception ex)
             {

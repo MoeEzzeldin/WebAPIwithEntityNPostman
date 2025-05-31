@@ -57,7 +57,7 @@ namespace SqlApiPostman.Controllers
         /// <param name="id"></param>
         /// <returns> we return NotFound if it comes back null or product with it's id</returns>
         [HttpGet("{id}")]
-        public async Task<ActionResult<ProductDTO>> GetProductByIdAsync(int id)
+        public async Task<ActionResult<ProductDTO>> GetProductAsync(int id)
         {
             if (id <= 0)
             {
@@ -96,9 +96,10 @@ namespace SqlApiPostman.Controllers
             }
             try
             {
-                int result = await _productRepo.AddProductAsync(product);
+                int newProductId = await _productRepo.AddProductAsync(product);
+                product.Id = newProductId;
                 _logger.LogInformation($"Created new product with ID: {product.Id}");
-                return CreatedAtAction(nameof(GetProductByIdAsync), new { id = result }, product);
+                return Created();
             }
             catch (Exception ex)
             {
@@ -119,15 +120,19 @@ namespace SqlApiPostman.Controllers
 
             try
             {
-                _logger.LogInformation($"Updating product with ID: {productDTO.Id}.");
-                int result = await _productRepo.UpdateProductAsync(productDTO);
-                if (result == 0)
+                if(await _productRepo.GetProductByIdAsync(productDTO.Id) == null)
                 {
                     _logger.LogWarning($"Product with ID: {productDTO.Id} not found for update.");
                     return NotFound();
                 }
-                _logger.LogInformation($"Product with ID: {result} updated successfully.");
-
+                _logger.LogInformation($"Updating product with ID: {productDTO.Id}.");
+                int updatedId = await _productRepo.UpdateProductAsync(productDTO);
+                if (updatedId == 0)
+                {
+                    _logger.LogWarning($"Product was found, but not updated");
+                    return StatusCode(500, "Found Product, but error with UpdateProductAsync Repo");
+                }
+                _logger.LogInformation($"Product with ID: {updatedId} updated successfully.");
                 return NoContent();
             }
             catch (Exception ex)
@@ -149,13 +154,20 @@ namespace SqlApiPostman.Controllers
             }
             try
             {
-                _logger.LogInformation($"Deleting product with ID: {id}.");
-                bool result = await _productRepo.DeleteProductAsync(id);
-                if (!result)
+                ProductDTO productTODelete = await _productRepo.GetProductByIdAsync(id);
+                if (productTODelete == null)
                 {
-                    _logger.LogWarning($"Product with ID: {id} passed Id check but was not deleted");
+                    _logger.LogWarning($"Product with ID: {id} not found for deletion.");
                     return NotFound();
                 }
+                _logger.LogInformation($"Deleting product with ID: {id}.");
+                bool deleted = await _productRepo.DeleteProductAsync(productTODelete);
+                if (!deleted)
+                {
+                    _logger.LogWarning($"Product with ID: {id} passed Id check but was not deleted");
+                    return StatusCode(500, "Internal server error");
+                }
+                _logger.LogInformation($"Product with ID: {id} deleted successfully.");
                 return NoContent();
             }
             catch (Exception ex)
