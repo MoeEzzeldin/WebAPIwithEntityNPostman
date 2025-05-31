@@ -3,11 +3,9 @@ using SqlApiPostman.Data;
 using System.Reflection;
 using Serilog;
 using Serilog.Events;
-using SqlApiPostman.Models.Entities;
 using SqlApiPostman.Repos.IRepo;
 using SqlApiPostman.Repos.Repo;
-//using SqlApiPostman.Repos.IRepo;
-//using SqlApiPostman.Repos.Repo;
+
 
 
 
@@ -31,7 +29,7 @@ builder.Services.AddDbContext<MyAppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddScoped<IProductRepo, ProductRepo>();
-//builder.Services.AddScoped<ICategoryRepo, CategoryRepo>();
+builder.Services.AddScoped<ICategoryRepo, CategoryRepo>();
 
 builder.Services.AddControllers();
 //// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

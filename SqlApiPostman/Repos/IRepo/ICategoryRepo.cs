@@ -5,10 +5,10 @@ namespace SqlApiPostman.Repos.IRepo
     public interface ICategoryRepo
     {
         Task<IEnumerable<CategoryDTO>> GetAllCategoriesAsync();
-        Task<CategoryDTO> GetCategoryByIdAsync(Guid id);
-        Task AddCategoryAsync(CategoryDTO category);
-        Task UpdateCategoryAsync(CategoryDTO category);
-        Task DeleteCategoryAsync(Guid id);
-        Task<IEnumerable<CategoryDTO>> GetCategoriesWithProductsAsync();
+        Task<CategoryDTO> GetCategoryByIdAsync(int id);
+        Task<int> AddCategoryAsync(CategoryDTO category);
+        Task<int> UpdateCategoryAsync(CategoryDTO category);
+        //Task<bool> DeleteCategoryAsync(CategoryDTO category);
+
     }
 }
