@@ -28,7 +28,6 @@ namespace SqlApiPostman.Repos.Repo
 
         public async Task<ProductDTO> GetProductByIdAsync(int id)
         {
-            ProductDTO product = null;
             if (id <= 0)
             {
                 _logger.LogError("Attempted to fetch a product with an invalid ID.");
@@ -38,8 +37,7 @@ namespace SqlApiPostman.Repos.Repo
             {
                 _logger.LogInformation($"Fetching product with ID: {id} from the database.");
                 var myProduct = await _context.Products.FindAsync(id);
-                _mapper.Map(myProduct, product);
-                return product;
+                return _mapper.Map<ProductDTO>(myProduct);
             }
             catch (Exception ex)
             {
@@ -77,57 +75,49 @@ namespace SqlApiPostman.Repos.Repo
                 _logger.LogError("Attempted to update a null product.");
                 throw new ArgumentNullException(nameof(productDTO), "Product cannot be null");
             }
+
             try
             {
-                var existingProduct = await _context.Products.FindAsync(productDTO.Id);
-                if (existingProduct == null)
+                if (!await _context.Products.AnyAsync(p => p.Id == productDTO.Id))
                 {
                     _logger.LogWarning($"Product with ID: {productDTO.Id} not found for update.");
-                    throw new KeyNotFoundException($"Product with ID: {productDTO.Id} not found.");
+                    return 0;
                 }
-                // Update properties
-                _mapper.Map(productDTO, existingProduct);
-                _context.Products.Update(existingProduct);
-                await _context.SaveChangesAsync();
-                _logger.LogInformation($"Product with ID: {productDTO.Id} updated successfully.");
 
-                return existingProduct.Id;
+                var productEntity = _mapper.Map<Product>(productDTO);
+                _context.Products.Update(productEntity);
+                int rowsAffected = await _context.SaveChangesAsync();
+
+                _logger.LogInformation($"Product with ID: {productDTO.Id} updated successfully. Rows affected: {rowsAffected}");
+                return rowsAffected > 0 ? productDTO.Id : 0;
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "An error occurred while updating the product.");
-
+                throw;
             }
-
-            return 0;
         }
+
+
 
         public async Task<bool> DeleteProductAsync(int id)
         {
-            if (id <= 0)
-            {
-                _logger.LogError("Attempted to delete a product with an invalid ID.");
-                throw new ArgumentException("ID must be greater than zero", nameof(id));
-            }
             try
             {
                 _logger.LogInformation($"Deleting product with ID: {id} from the database.");
                 var product = await _context.Products.FindAsync(id);
-                if (product != null)
+                bool productExist = product != null;
+                if (productExist)
                 {
                     _context.Products.Remove(product);
-                    await _context.SaveChangesAsync();
+                    return productExist = await _context.SaveChangesAsync() > 0;
                 }
-                else
-                {
-                    _logger.LogWarning($"Product with ID: {id} not found for deletion.");
-                }
-                return product != null;
+                return false;
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "An error occurred while deleting the product.");
-                return false;
+                throw;
             }
         }
     }

@@ -10,8 +10,7 @@ namespace SqlApiPostman.Data.Mappings
         {
             // Create mappings between Product entity and ProductDTO
             CreateMap<Product, ProductDTO>();
-            CreateMap<ProductDTO, Product>()
-                .ForMember(dest => dest.Id, opt => opt.Ignore()); // Ignore Id to allow auto-generation by the database
+            CreateMap<ProductDTO, Product>();
         }
     }
 }

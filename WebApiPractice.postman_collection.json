@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "f783270e-9f9a-4497-8b63-7d2e024e5d93",
+		"name": "WebApiPractice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33215216"
+	},
+	"item": [
+		{
+			"name": "AllProducts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7001/product",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7001",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProductId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7001/product/1004",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7001",
+					"path": [
+						"product",
+						"1004"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\": \"Test Update new product that's newer than the last one\",\r\n\"description\": \"This is a test product For create new new\",\r\n\"price\": 29.99,\r\n\"stockQuantity\": 200,\r\n\"categoryId\": 1,\r\n\"category\": {\r\n\"id\": 1,\r\n\"name\": \"create\",\r\n\"description\": \"Any\",\r\n\"products\": []\r\n}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7001/product",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7001",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateProduct",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1,\r\n  \"name\": \"Updated Product confmirmation\",\r\n  \"description\": \"Updated description confirmation\",\r\n  \"price\": 29.99,\r\n  \"stockQuantity\": 100,\r\n  \"categoryId\": 1\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5029/api/Product/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5029",
+					"path": [
+						"api",
+						"Product",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteProduct",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7001/product/1004",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7001",
+					"path": [
+						"product",
+						"1004"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

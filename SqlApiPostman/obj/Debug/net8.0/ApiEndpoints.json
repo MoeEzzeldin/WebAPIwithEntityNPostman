@@ -20,7 +20,7 @@
   {
     "ContainingType": "SqlApiPostman.Controllers.ProductController",
     "Method": "GetProducts",
-    "RelativePath": "api/Product",
+    "RelativePath": "Product",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -40,7 +40,7 @@
   {
     "ContainingType": "SqlApiPostman.Controllers.ProductController",
     "Method": "CreateProduct",
-    "RelativePath": "api/Product",
+    "RelativePath": "Product",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -65,8 +65,24 @@
   },
   {
     "ContainingType": "SqlApiPostman.Controllers.ProductController",
+    "Method": "UpdateProduct",
+    "RelativePath": "Product",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productDTO",
+        "Type": "SqlApiPostman.Models.DTOs.ProductDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SqlApiPostman.Controllers.ProductController",
     "Method": "GetProduct",
-    "RelativePath": "api/Product/{id}",
+    "RelativePath": "Product/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -91,29 +107,8 @@
   },
   {
     "ContainingType": "SqlApiPostman.Controllers.ProductController",
-    "Method": "UpdateProduct",
-    "RelativePath": "api/Product/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "product",
-        "Type": "SqlApiPostman.Models.DTOs.ProductDTO",
-        "IsRequired": true
-      },
-      {
-        "Name": "id",
-        "Type": "",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "SqlApiPostman.Controllers.ProductController",
     "Method": "DeleteProduct",
-    "RelativePath": "api/Product/{id}",
+    "RelativePath": "Product/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

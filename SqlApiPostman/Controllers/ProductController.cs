@@ -6,9 +6,9 @@ using AutoMapper;
 
 namespace SqlApiPostman.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
-    public class ProductController : ControllerBase  // Change to ControllerBase for API
+    public class ProductController : ControllerBase
     {
         private readonly ILogger<ProductController> _logger;
         private readonly IProductRepo _productRepo;
@@ -27,7 +27,7 @@ namespace SqlApiPostman.Controllers
             _logger.LogInformation("Fetching all products");
             try
             {
-                 var products = await _productRepo.GetAllProductsAsync();
+                var products = await _productRepo.GetAllProductsAsync();
                 if (products == null || !products.Any())
                 {
                     _logger.LogWarning("No products found.");
@@ -78,26 +78,37 @@ namespace SqlApiPostman.Controllers
             }
         }
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateProduct([FromBody] ProductDTO product)
+
+        [HttpPut]
+        public async Task<IActionResult> UpdateProduct([FromBody] ProductDTO productDTO)
         {
-            if (product == null)
+            if (productDTO == null || productDTO.Id == null)
             {
                 _logger.LogError("Invalid product data for update.");
                 return BadRequest("Invalid product data.");
             }
+
             try
             {
-                _logger.LogInformation($"Updating product with ID: {product.Id}.");
-                int result = await _productRepo.UpdateProductAsync(product);
+                _logger.LogInformation($"Updating product with ID: {productDTO.Id}.");
+                int result = await _productRepo.UpdateProductAsync(productDTO);
+                if (result == 0)
+                {
+                    _logger.LogWarning($"Product with ID: {productDTO.Id} not found for update.");
+                    return NotFound();
+                }
+                _logger.LogInformation($"Product with ID: {result} updated successfully.");
+
+                return NoContent();
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "An error occurred while updating the product.");
                 return StatusCode(500, "Internal server error");
             }
-            return NoContent();
         }
+
+
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProduct(int id)
@@ -110,14 +121,19 @@ namespace SqlApiPostman.Controllers
             try
             {
                 _logger.LogInformation($"Deleting product with ID: {id}.");
-                await _productRepo.DeleteProductAsync(id);
+                bool result = await _productRepo.DeleteProductAsync(id);
+                if (!result)
+                {
+                    _logger.LogWarning($"Product with ID: {id} passed Id check but was not deleted");
+                    return NotFound();
+                }
+                return NoContent();
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "An error occurred while deleting the product.");
                 return StatusCode(500, "Internal server error");
             }
-            return NoContent();
         }
     }
 }

@@ -1,0 +1,1543 @@
+2025-05-31 13:29:54.486 -04:00 [INF] Now listening on: https://localhost:7001
+2025-05-31 13:29:54.538 -04:00 [INF] Now listening on: http://localhost:5029
+2025-05-31 13:29:54.695 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-31 13:29:54.697 -04:00 [INF] Hosting environment: Development
+2025-05-31 13:29:54.698 -04:00 [INF] Content root path: C:\Users\Ahmed\workspace\repositories\WebAPIwithEntityNPostman\SqlApiPostman
+2025-05-31 13:29:56.136 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7001/api/Product - null null
+2025-05-31 13:29:56.352 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:29:56.382 -04:00 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SqlApiPostman.Models.DTOs.ProductDTO]]] GetProducts() on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:29:56.705 -04:00 [INF] Fetching all products
+2025-05-31 13:29:56.708 -04:00 [INF] Fetching all products from the database.
+2025-05-31 13:29:57.290 -04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-05-31 13:29:58.140 -04:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+2025-05-31 13:29:58.246 -04:00 [INF] Found 4 products.
+2025-05-31 13:29:58.253 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SqlApiPostman.Models.DTOs.ProductDTO, SqlApiPostman, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-31 13:29:58.277 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman) in 1886.252ms
+2025-05-31 13:29:58.283 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:29:58.302 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7001/api/Product - 200 null application/json; charset=utf-8 2176.9925ms
+2025-05-31 13:29:58.658 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7001/favicon.ico - null null
+2025-05-31 13:29:58.666 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7001/favicon.ico - 404 0 null 8.4485ms
+2025-05-31 13:29:58.677 -04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7001/favicon.ico, Response status code: 404
+2025-05-31 13:30:56.338 -04:00 [INF] Now listening on: https://localhost:7001
+2025-05-31 13:30:56.378 -04:00 [INF] Now listening on: http://localhost:5029
+2025-05-31 13:30:56.497 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-31 13:30:56.500 -04:00 [INF] Hosting environment: Development
+2025-05-31 13:30:56.503 -04:00 [INF] Content root path: C:\Users\Ahmed\workspace\repositories\WebAPIwithEntityNPostman\SqlApiPostman
+2025-05-31 13:30:57.671 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7001/api/Product - null null
+2025-05-31 13:30:57.848 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:30:57.881 -04:00 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SqlApiPostman.Models.DTOs.ProductDTO]]] GetProducts() on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:30:58.171 -04:00 [INF] Fetching all products
+2025-05-31 13:30:58.175 -04:00 [INF] Fetching all products from the database.
+2025-05-31 13:30:58.763 -04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-05-31 13:30:59.554 -04:00 [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+2025-05-31 13:30:59.685 -04:00 [INF] Found 4 products.
+2025-05-31 13:30:59.694 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SqlApiPostman.Models.DTOs.ProductDTO, SqlApiPostman, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-31 13:30:59.722 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman) in 1834.2981ms
+2025-05-31 13:30:59.729 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:30:59.744 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7001/api/Product - 200 null application/json; charset=utf-8 2083.5103ms
+2025-05-31 13:31:04.132 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7001/api/Product/1 - null null
+2025-05-31 13:31:04.141 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProduct (SqlApiPostman)'
+2025-05-31 13:31:04.155 -04:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SqlApiPostman.Models.DTOs.ProductDTO]] GetProduct(Int32) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:31:04.185 -04:00 [INF] Fetching details for product with ID: 1.
+2025-05-31 13:31:04.188 -04:00 [INF] Fetching product with ID: 1 from the database.
+2025-05-31 13:31:04.367 -04:00 [INF] Executed DbCommand (37ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+WHERE [p].[Id] = @__p_0
+2025-05-31 13:31:04.378 -04:00 [INF] Executing OkObjectResult, writing value of type 'SqlApiPostman.Models.DTOs.ProductDTO'.
+2025-05-31 13:31:04.382 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProduct (SqlApiPostman) in 223.7585ms
+2025-05-31 13:31:04.385 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProduct (SqlApiPostman)'
+2025-05-31 13:31:04.388 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7001/api/Product/1 - 200 null application/json; charset=utf-8 256.2831ms
+2025-05-31 13:31:19.077 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5029/api/Product/1 - application/json 150
+2025-05-31 13:31:19.088 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5029/api/Product/1 - 307 0 null 10.969ms
+2025-05-31 13:31:19.103 -04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7001/api/Product/1 - application/json 150
+2025-05-31 13:31:19.106 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 13:31:19.111 -04:00 [INF] Route matched with {action = "UpdateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateProduct(SqlApiPostman.Models.DTOs.ProductDTO) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:31:19.155 -04:00 [INF] Updating product with ID: 1.
+2025-05-31 13:31:26.287 -04:00 [INF] Executed DbCommand (5ms) [Parameters=[@__productDTO_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Products] AS [p]
+        WHERE [p].[Id] = @__productDTO_Id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-31 13:32:49.016 -04:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([Description], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2025-05-31 13:32:49.038 -04:00 [INF] Executed DbCommand (5ms) [Parameters=[@p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([CategoryId], [Description], [Name], [Price], [StockQuantity])
+OUTPUT INSERTED.[Id]
+VALUES (@p2, @p3, @p4, @p5, @p6);
+2025-05-31 13:32:49.055 -04:00 [INF] Product with ID: 1 updated successfully. Rows affected: 2
+2025-05-31 13:32:49.057 -04:00 [INF] Product with ID: 1 updated successfully.
+2025-05-31 13:32:49.060 -04:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-05-31 13:32:49.061 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman) in 89947.8142ms
+2025-05-31 13:32:49.066 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 13:32:49.067 -04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7001/api/Product/1 - 204 null null 89964.5832ms
+2025-05-31 13:33:00.044 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7001/api/Product/1 - null null
+2025-05-31 13:33:00.059 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProduct (SqlApiPostman)'
+2025-05-31 13:33:00.061 -04:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SqlApiPostman.Models.DTOs.ProductDTO]] GetProduct(Int32) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:33:00.064 -04:00 [INF] Fetching details for product with ID: 1.
+2025-05-31 13:33:00.065 -04:00 [INF] Fetching product with ID: 1 from the database.
+2025-05-31 13:33:00.087 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+WHERE [p].[Id] = @__p_0
+2025-05-31 13:33:00.090 -04:00 [INF] Executing OkObjectResult, writing value of type 'SqlApiPostman.Models.DTOs.ProductDTO'.
+2025-05-31 13:33:00.092 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProduct (SqlApiPostman) in 28.5993ms
+2025-05-31 13:33:00.094 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProduct (SqlApiPostman)'
+2025-05-31 13:33:00.096 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7001/api/Product/1 - 200 null application/json; charset=utf-8 52.1632ms
+2025-05-31 13:33:01.659 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7001/api/Product/1 - null null
+2025-05-31 13:33:01.665 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProduct (SqlApiPostman)'
+2025-05-31 13:33:01.667 -04:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SqlApiPostman.Models.DTOs.ProductDTO]] GetProduct(Int32) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:33:01.670 -04:00 [INF] Fetching details for product with ID: 1.
+2025-05-31 13:33:01.671 -04:00 [INF] Fetching product with ID: 1 from the database.
+2025-05-31 13:33:01.688 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+WHERE [p].[Id] = @__p_0
+2025-05-31 13:33:01.692 -04:00 [INF] Executing OkObjectResult, writing value of type 'SqlApiPostman.Models.DTOs.ProductDTO'.
+2025-05-31 13:33:01.693 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProduct (SqlApiPostman) in 23.9379ms
+2025-05-31 13:33:01.695 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProduct (SqlApiPostman)'
+2025-05-31 13:33:01.697 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7001/api/Product/1 - 200 null application/json; charset=utf-8 39.0257ms
+2025-05-31 13:33:06.894 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7001/api/Product - null null
+2025-05-31 13:33:06.900 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:33:06.902 -04:00 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SqlApiPostman.Models.DTOs.ProductDTO]]] GetProducts() on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:33:06.905 -04:00 [INF] Fetching all products
+2025-05-31 13:33:06.906 -04:00 [INF] Fetching all products from the database.
+2025-05-31 13:33:06.922 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+2025-05-31 13:33:06.926 -04:00 [INF] Found 5 products.
+2025-05-31 13:33:06.927 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SqlApiPostman.Models.DTOs.ProductDTO, SqlApiPostman, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-31 13:33:06.929 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman) in 25.0088ms
+2025-05-31 13:33:06.932 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:33:06.934 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7001/api/Product - 200 null application/json; charset=utf-8 40.5222ms
+2025-05-31 13:34:49.498 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5029/api/Product/1 - application/json 150
+2025-05-31 13:34:49.510 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5029/api/Product/1 - 307 0 null 12.0515ms
+2025-05-31 13:34:49.512 -04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7001/api/Product/1 - application/json 150
+2025-05-31 13:34:49.518 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 13:34:49.519 -04:00 [INF] Route matched with {action = "UpdateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateProduct(SqlApiPostman.Models.DTOs.ProductDTO) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:34:49.524 -04:00 [INF] Updating product with ID: 1.
+2025-05-31 13:35:03.896 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__productDTO_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Products] AS [p]
+        WHERE [p].[Id] = @__productDTO_Id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-31 13:36:13.297 -04:00 [INF] Now listening on: https://localhost:7001
+2025-05-31 13:36:13.338 -04:00 [INF] Now listening on: http://localhost:5029
+2025-05-31 13:36:13.536 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-31 13:36:13.538 -04:00 [INF] Hosting environment: Development
+2025-05-31 13:36:13.539 -04:00 [INF] Content root path: C:\Users\Ahmed\workspace\repositories\WebAPIwithEntityNPostman\SqlApiPostman
+2025-05-31 13:36:14.413 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7001/api/Product - null null
+2025-05-31 13:36:14.582 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:36:14.613 -04:00 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SqlApiPostman.Models.DTOs.ProductDTO]]] GetProducts() on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:36:14.860 -04:00 [INF] Fetching all products
+2025-05-31 13:36:14.865 -04:00 [INF] Fetching all products from the database.
+2025-05-31 13:36:15.363 -04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-05-31 13:36:16.133 -04:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+2025-05-31 13:36:16.232 -04:00 [INF] Found 5 products.
+2025-05-31 13:36:16.241 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SqlApiPostman.Models.DTOs.ProductDTO, SqlApiPostman, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-31 13:36:16.261 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman) in 1641.0385ms
+2025-05-31 13:36:16.267 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:36:16.280 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7001/api/Product - 200 null application/json; charset=utf-8 1876.8131ms
+2025-05-31 13:36:21.930 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5029/api/Product/1 - application/json 150
+2025-05-31 13:36:21.949 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5029/api/Product/1 - 307 0 null 18.3551ms
+2025-05-31 13:36:21.959 -04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7001/api/Product/1 - application/json 150
+2025-05-31 13:36:21.963 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 13:36:21.975 -04:00 [INF] Route matched with {action = "UpdateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateProduct(SqlApiPostman.Models.DTOs.ProductDTO) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:36:22.013 -04:00 [INF] Updating product with ID: 1.
+2025-05-31 13:36:24.801 -04:00 [INF] Executed DbCommand (30ms) [Parameters=[@__productDTO_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Products] AS [p]
+        WHERE [p].[Id] = @__productDTO_Id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-31 13:36:43.237 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([Description], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2025-05-31 13:36:43.264 -04:00 [INF] Executed DbCommand (6ms) [Parameters=[@p7='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Products] SET [CategoryId] = @p2, [Description] = @p3, [Name] = @p4, [Price] = @p5, [StockQuantity] = @p6
+OUTPUT 1
+WHERE [Id] = @p7;
+2025-05-31 13:36:43.282 -04:00 [INF] Product with ID: 1 updated successfully. Rows affected: 2
+2025-05-31 13:36:43.284 -04:00 [INF] Product with ID: 1 updated successfully.
+2025-05-31 13:36:43.287 -04:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-05-31 13:36:43.288 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman) in 21310.5097ms
+2025-05-31 13:36:43.289 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 13:36:43.290 -04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7001/api/Product/1 - 204 null null 21331.1145ms
+2025-05-31 13:36:53.257 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7001/api/Product/1 - null null
+2025-05-31 13:36:53.269 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProduct (SqlApiPostman)'
+2025-05-31 13:36:53.275 -04:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SqlApiPostman.Models.DTOs.ProductDTO]] GetProduct(Int32) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:36:53.284 -04:00 [INF] Fetching details for product with ID: 1.
+2025-05-31 13:36:53.286 -04:00 [INF] Fetching product with ID: 1 from the database.
+2025-05-31 13:36:53.392 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+WHERE [p].[Id] = @__p_0
+2025-05-31 13:36:53.400 -04:00 [INF] Executing OkObjectResult, writing value of type 'SqlApiPostman.Models.DTOs.ProductDTO'.
+2025-05-31 13:36:53.401 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProduct (SqlApiPostman) in 123.7515ms
+2025-05-31 13:36:53.404 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProduct (SqlApiPostman)'
+2025-05-31 13:36:53.406 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7001/api/Product/1 - 200 null application/json; charset=utf-8 149.8908ms
+2025-05-31 13:36:59.655 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7001/api/Product - null null
+2025-05-31 13:36:59.662 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:36:59.664 -04:00 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SqlApiPostman.Models.DTOs.ProductDTO]]] GetProducts() on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:36:59.668 -04:00 [INF] Fetching all products
+2025-05-31 13:36:59.669 -04:00 [INF] Fetching all products from the database.
+2025-05-31 13:36:59.687 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+2025-05-31 13:36:59.691 -04:00 [INF] Found 5 products.
+2025-05-31 13:36:59.692 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SqlApiPostman.Models.DTOs.ProductDTO, SqlApiPostman, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-31 13:36:59.694 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman) in 26.7907ms
+2025-05-31 13:36:59.697 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:36:59.699 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7001/api/Product - 200 null application/json; charset=utf-8 44.7182ms
+2025-05-31 13:37:19.840 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5029/api/Product/1 - application/json 177
+2025-05-31 13:37:19.846 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5029/api/Product/1 - 307 0 null 6.3544ms
+2025-05-31 13:37:19.849 -04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7001/api/Product/1 - application/json 177
+2025-05-31 13:37:19.856 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 13:37:19.859 -04:00 [INF] Route matched with {action = "UpdateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateProduct(SqlApiPostman.Models.DTOs.ProductDTO) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:37:19.863 -04:00 [INF] Updating product with ID: 1.
+2025-05-31 13:37:21.639 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__productDTO_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Products] AS [p]
+        WHERE [p].[Id] = @__productDTO_Id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-31 13:37:23.084 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([Description], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2025-05-31 13:37:23.088 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@p7='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Products] SET [CategoryId] = @p2, [Description] = @p3, [Name] = @p4, [Price] = @p5, [StockQuantity] = @p6
+OUTPUT 1
+WHERE [Id] = @p7;
+2025-05-31 13:37:23.093 -04:00 [INF] Product with ID: 1 updated successfully. Rows affected: 2
+2025-05-31 13:37:23.094 -04:00 [INF] Product with ID: 1 updated successfully.
+2025-05-31 13:37:23.095 -04:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-05-31 13:37:23.097 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman) in 3235.0122ms
+2025-05-31 13:37:23.098 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 13:37:23.100 -04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7001/api/Product/1 - 204 null null 3251.4705ms
+2025-05-31 13:37:29.379 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7001/api/Product - null null
+2025-05-31 13:37:29.386 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:37:29.388 -04:00 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SqlApiPostman.Models.DTOs.ProductDTO]]] GetProducts() on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:37:29.391 -04:00 [INF] Fetching all products
+2025-05-31 13:37:29.393 -04:00 [INF] Fetching all products from the database.
+2025-05-31 13:37:29.409 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+2025-05-31 13:37:29.413 -04:00 [INF] Found 5 products.
+2025-05-31 13:37:29.415 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SqlApiPostman.Models.DTOs.ProductDTO, SqlApiPostman, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-31 13:37:29.416 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman) in 25.5284ms
+2025-05-31 13:37:29.418 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:37:29.420 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7001/api/Product - 200 null application/json; charset=utf-8 41.3042ms
+2025-05-31 13:38:09.796 -04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7001/api/product - application/json 241
+2025-05-31 13:38:09.800 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.CreateProduct (SqlApiPostman)'
+2025-05-31 13:38:09.804 -04:00 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SqlApiPostman.Models.DTOs.ProductDTO]] CreateProduct(SqlApiPostman.Models.DTOs.ProductDTO) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:38:09.848 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([Description], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2025-05-31 13:38:09.853 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[@p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([CategoryId], [Description], [Name], [Price], [StockQuantity])
+OUTPUT INSERTED.[Id]
+VALUES (@p2, @p3, @p4, @p5, @p6);
+2025-05-31 13:38:09.859 -04:00 [INF] Product with ID: 1005 added successfully.
+2025-05-31 13:38:09.860 -04:00 [INF] Created new product with ID: 0
+2025-05-31 13:38:09.862 -04:00 [INF] Executing CreatedAtActionResult, writing value of type 'SqlApiPostman.Models.DTOs.ProductDTO'.
+2025-05-31 13:38:09.884 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.CreateProduct (SqlApiPostman) in 75.172ms
+2025-05-31 13:38:09.886 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.CreateProduct (SqlApiPostman)'
+2025-05-31 13:38:09.889 -04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7001/api/product - 201 null application/json; charset=utf-8 92.8841ms
+2025-05-31 13:38:18.571 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7001/api/Product - null null
+2025-05-31 13:38:18.595 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:38:18.596 -04:00 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SqlApiPostman.Models.DTOs.ProductDTO]]] GetProducts() on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:38:18.599 -04:00 [INF] Fetching all products
+2025-05-31 13:38:18.600 -04:00 [INF] Fetching all products from the database.
+2025-05-31 13:38:18.614 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+2025-05-31 13:38:18.617 -04:00 [INF] Found 6 products.
+2025-05-31 13:38:18.619 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SqlApiPostman.Models.DTOs.ProductDTO, SqlApiPostman, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-31 13:38:18.620 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman) in 21.7245ms
+2025-05-31 13:38:18.623 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:38:18.625 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7001/api/Product - 200 null application/json; charset=utf-8 53.8551ms
+2025-05-31 13:39:02.736 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5029/api/Product - application/json 177
+2025-05-31 13:39:02.740 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5029/api/Product - 307 0 null 3.555ms
+2025-05-31 13:39:02.742 -04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7001/api/Product - application/json 177
+2025-05-31 13:39:02.753 -04:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-05-31 13:39:02.755 -04:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-05-31 13:39:02.756 -04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7001/api/Product - 405 0 null 14.147ms
+2025-05-31 13:39:12.120 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5029/api/Product/2 - application/json 177
+2025-05-31 13:39:12.128 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5029/api/Product/2 - 307 0 null 8.7972ms
+2025-05-31 13:39:12.131 -04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7001/api/Product/2 - application/json 177
+2025-05-31 13:39:12.138 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 13:39:12.140 -04:00 [INF] Route matched with {action = "UpdateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateProduct(SqlApiPostman.Models.DTOs.ProductDTO) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:39:12.143 -04:00 [INF] Updating product with ID: 2.
+2025-05-31 13:39:30.485 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__productDTO_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Products] AS [p]
+        WHERE [p].[Id] = @__productDTO_Id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-31 13:39:35.115 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([Description], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2025-05-31 13:39:35.121 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@p7='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Products] SET [CategoryId] = @p2, [Description] = @p3, [Name] = @p4, [Price] = @p5, [StockQuantity] = @p6
+OUTPUT 1
+WHERE [Id] = @p7;
+2025-05-31 13:39:35.125 -04:00 [INF] Product with ID: 2 updated successfully. Rows affected: 2
+2025-05-31 13:39:35.127 -04:00 [INF] Product with ID: 2 updated successfully.
+2025-05-31 13:39:35.128 -04:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-05-31 13:39:35.129 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman) in 22986.9498ms
+2025-05-31 13:39:35.131 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 13:39:35.132 -04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7001/api/Product/2 - 204 null null 23001.1541ms
+2025-05-31 13:39:41.115 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7001/api/Product - null null
+2025-05-31 13:39:41.126 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:39:41.128 -04:00 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SqlApiPostman.Models.DTOs.ProductDTO]]] GetProducts() on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:39:41.131 -04:00 [INF] Fetching all products
+2025-05-31 13:39:41.132 -04:00 [INF] Fetching all products from the database.
+2025-05-31 13:39:41.148 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+2025-05-31 13:39:41.152 -04:00 [INF] Found 6 products.
+2025-05-31 13:39:41.153 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SqlApiPostman.Models.DTOs.ProductDTO, SqlApiPostman, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-31 13:39:41.156 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman) in 24.6678ms
+2025-05-31 13:39:41.159 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:39:41.161 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7001/api/Product - 200 null application/json; charset=utf-8 46.099ms
+2025-05-31 13:39:49.299 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5029/api/Product - application/json 177
+2025-05-31 13:39:49.304 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5029/api/Product - 307 0 null 5.2018ms
+2025-05-31 13:39:49.307 -04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7001/api/Product - application/json 177
+2025-05-31 13:39:49.319 -04:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-05-31 13:39:49.321 -04:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-05-31 13:39:49.324 -04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7001/api/Product - 405 0 null 16.9442ms
+2025-05-31 13:40:12.292 -04:00 [INF] Now listening on: https://localhost:7001
+2025-05-31 13:40:12.330 -04:00 [INF] Now listening on: http://localhost:5029
+2025-05-31 13:40:12.495 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-31 13:40:12.498 -04:00 [INF] Hosting environment: Development
+2025-05-31 13:40:12.500 -04:00 [INF] Content root path: C:\Users\Ahmed\workspace\repositories\WebAPIwithEntityNPostman\SqlApiPostman
+2025-05-31 13:40:13.375 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7001/api/Product - null null
+2025-05-31 13:40:13.539 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:40:13.567 -04:00 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SqlApiPostman.Models.DTOs.ProductDTO]]] GetProducts() on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:40:13.829 -04:00 [INF] Fetching all products
+2025-05-31 13:40:13.833 -04:00 [INF] Fetching all products from the database.
+2025-05-31 13:40:14.316 -04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-05-31 13:40:15.027 -04:00 [INF] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+2025-05-31 13:40:15.120 -04:00 [INF] Found 6 products.
+2025-05-31 13:40:15.133 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SqlApiPostman.Models.DTOs.ProductDTO, SqlApiPostman, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-31 13:40:15.159 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman) in 1585.886ms
+2025-05-31 13:40:15.164 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:40:15.177 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7001/api/Product - 200 null application/json; charset=utf-8 1811.1282ms
+2025-05-31 13:40:24.920 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5029/api/Product - application/json 177
+2025-05-31 13:40:24.939 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5029/api/Product - 307 0 null 18.95ms
+2025-05-31 13:40:24.956 -04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7001/api/Product - application/json 177
+2025-05-31 13:40:24.960 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 13:40:24.972 -04:00 [INF] Route matched with {action = "UpdateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateProduct(SqlApiPostman.Models.DTOs.ProductDTO) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:40:25.013 -04:00 [INF] Updating product with ID: 3.
+2025-05-31 13:40:34.044 -04:00 [INF] Executed DbCommand (32ms) [Parameters=[@__productDTO_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Products] AS [p]
+        WHERE [p].[Id] = @__productDTO_Id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-31 13:40:44.950 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([Description], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2025-05-31 13:40:44.974 -04:00 [INF] Executed DbCommand (4ms) [Parameters=[@p7='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Products] SET [CategoryId] = @p2, [Description] = @p3, [Name] = @p4, [Price] = @p5, [StockQuantity] = @p6
+OUTPUT 1
+WHERE [Id] = @p7;
+2025-05-31 13:40:44.996 -04:00 [INF] Product with ID: 3 updated successfully. Rows affected: 2
+2025-05-31 13:40:44.998 -04:00 [INF] Product with ID: 3 updated successfully.
+2025-05-31 13:40:45.001 -04:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-05-31 13:40:45.002 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman) in 20025.571ms
+2025-05-31 13:40:45.003 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 13:40:45.004 -04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7001/api/Product - 204 null null 20047.769ms
+2025-05-31 13:40:50.403 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7001/api/Product - null null
+2025-05-31 13:40:50.413 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:40:50.415 -04:00 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SqlApiPostman.Models.DTOs.ProductDTO]]] GetProducts() on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:40:50.421 -04:00 [INF] Fetching all products
+2025-05-31 13:40:50.423 -04:00 [INF] Fetching all products from the database.
+2025-05-31 13:40:50.487 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+2025-05-31 13:40:50.491 -04:00 [INF] Found 6 products.
+2025-05-31 13:40:50.492 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SqlApiPostman.Models.DTOs.ProductDTO, SqlApiPostman, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-31 13:40:50.495 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman) in 77.321ms
+2025-05-31 13:40:50.497 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:40:50.499 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7001/api/Product - 200 null application/json; charset=utf-8 96.9729ms
+2025-05-31 13:44:10.255 -04:00 [INF] Now listening on: https://localhost:7001
+2025-05-31 13:44:10.319 -04:00 [INF] Now listening on: http://localhost:5029
+2025-05-31 13:44:10.484 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-31 13:44:10.485 -04:00 [INF] Hosting environment: Development
+2025-05-31 13:44:10.487 -04:00 [INF] Content root path: C:\Users\Ahmed\workspace\repositories\WebAPIwithEntityNPostman\SqlApiPostman
+2025-05-31 13:44:11.159 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7001/api/Product - null null
+2025-05-31 13:44:11.328 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:44:11.360 -04:00 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SqlApiPostman.Models.DTOs.ProductDTO]]] GetProducts() on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:44:11.625 -04:00 [INF] Fetching all products
+2025-05-31 13:44:11.628 -04:00 [INF] Fetching all products from the database.
+2025-05-31 13:44:12.183 -04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-05-31 13:44:12.935 -04:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+2025-05-31 13:44:13.042 -04:00 [INF] Found 6 products.
+2025-05-31 13:44:13.052 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SqlApiPostman.Models.DTOs.ProductDTO, SqlApiPostman, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-31 13:44:13.072 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman) in 1705.1471ms
+2025-05-31 13:44:13.078 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:44:13.094 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7001/api/Product - 200 null application/json; charset=utf-8 1945.6439ms
+2025-05-31 13:44:39.940 -04:00 [INF] Now listening on: https://localhost:7001
+2025-05-31 13:44:39.996 -04:00 [INF] Now listening on: http://localhost:5029
+2025-05-31 13:44:40.147 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-31 13:44:40.148 -04:00 [INF] Hosting environment: Development
+2025-05-31 13:44:40.152 -04:00 [INF] Content root path: C:\Users\Ahmed\workspace\repositories\WebAPIwithEntityNPostman\SqlApiPostman
+2025-05-31 13:44:41.181 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7001/api/Product - null null
+2025-05-31 13:44:41.348 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7001/api/Product - 404 0 null 180.866ms
+2025-05-31 13:44:41.359 -04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7001/api/Product, Response status code: 404
+2025-05-31 13:45:18.774 -04:00 [INF] Now listening on: https://localhost:7001
+2025-05-31 13:45:18.828 -04:00 [INF] Now listening on: http://localhost:5029
+2025-05-31 13:45:18.995 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-31 13:45:18.997 -04:00 [INF] Hosting environment: Development
+2025-05-31 13:45:18.998 -04:00 [INF] Content root path: C:\Users\Ahmed\workspace\repositories\WebAPIwithEntityNPostman\SqlApiPostman
+2025-05-31 13:45:19.735 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7001/Product - null null
+2025-05-31 13:45:19.900 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:45:19.929 -04:00 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SqlApiPostman.Models.DTOs.ProductDTO]]] GetProducts() on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:45:20.184 -04:00 [INF] Fetching all products
+2025-05-31 13:45:20.189 -04:00 [INF] Fetching all products from the database.
+2025-05-31 13:45:20.727 -04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-05-31 13:45:21.377 -04:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+2025-05-31 13:45:21.473 -04:00 [INF] Found 6 products.
+2025-05-31 13:45:21.480 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SqlApiPostman.Models.DTOs.ProductDTO, SqlApiPostman, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-31 13:45:21.499 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman) in 1563.1163ms
+2025-05-31 13:45:21.505 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:45:21.518 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7001/Product - 200 null application/json; charset=utf-8 1794.9409ms
+2025-05-31 13:45:33.459 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/product - null null
+2025-05-31 13:45:33.465 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:45:33.467 -04:00 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SqlApiPostman.Models.DTOs.ProductDTO]]] GetProducts() on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:45:33.470 -04:00 [INF] Fetching all products
+2025-05-31 13:45:33.471 -04:00 [INF] Fetching all products from the database.
+2025-05-31 13:45:33.516 -04:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+2025-05-31 13:45:33.520 -04:00 [INF] Found 6 products.
+2025-05-31 13:45:33.521 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SqlApiPostman.Models.DTOs.ProductDTO, SqlApiPostman, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-31 13:45:33.536 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman) in 67.0182ms
+2025-05-31 13:45:33.538 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:45:33.540 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/product - 200 null application/json; charset=utf-8 80.9335ms
+2025-05-31 13:45:48.170 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/product/1 - null null
+2025-05-31 13:45:48.177 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProduct (SqlApiPostman)'
+2025-05-31 13:45:48.187 -04:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SqlApiPostman.Models.DTOs.ProductDTO]] GetProduct(Int32) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:45:48.201 -04:00 [INF] Fetching details for product with ID: 1.
+2025-05-31 13:45:48.203 -04:00 [INF] Fetching product with ID: 1 from the database.
+2025-05-31 13:45:48.417 -04:00 [INF] Executed DbCommand (23ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+WHERE [p].[Id] = @__p_0
+2025-05-31 13:45:48.425 -04:00 [INF] Executing OkObjectResult, writing value of type 'SqlApiPostman.Models.DTOs.ProductDTO'.
+2025-05-31 13:45:48.428 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProduct (SqlApiPostman) in 238.7494ms
+2025-05-31 13:45:48.431 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProduct (SqlApiPostman)'
+2025-05-31 13:45:48.433 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/product/1 - 200 null application/json; charset=utf-8 263.4062ms
+2025-05-31 13:46:20.704 -04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7001/api/product - application/json 276
+2025-05-31 13:46:20.712 -04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7001/api/product - 404 0 null 8.5814ms
+2025-05-31 13:46:20.718 -04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7001/api/product, Response status code: 404
+2025-05-31 13:46:27.589 -04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7001/product - application/json 276
+2025-05-31 13:46:27.597 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.CreateProduct (SqlApiPostman)'
+2025-05-31 13:46:27.602 -04:00 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SqlApiPostman.Models.DTOs.ProductDTO]] CreateProduct(SqlApiPostman.Models.DTOs.ProductDTO) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:46:27.815 -04:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([Description], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2025-05-31 13:46:27.836 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([CategoryId], [Description], [Name], [Price], [StockQuantity])
+OUTPUT INSERTED.[Id]
+VALUES (@p2, @p3, @p4, @p5, @p6);
+2025-05-31 13:46:27.857 -04:00 [INF] Product with ID: 1006 added successfully.
+2025-05-31 13:46:27.860 -04:00 [INF] Created new product with ID: 0
+2025-05-31 13:46:27.864 -04:00 [INF] Executing CreatedAtActionResult, writing value of type 'SqlApiPostman.Models.DTOs.ProductDTO'.
+2025-05-31 13:46:27.886 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.CreateProduct (SqlApiPostman) in 280.628ms
+2025-05-31 13:46:27.889 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.CreateProduct (SqlApiPostman)'
+2025-05-31 13:46:27.891 -04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7001/product - 201 null application/json; charset=utf-8 301.6311ms
+2025-05-31 13:46:40.638 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/product - null null
+2025-05-31 13:46:40.642 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:46:40.643 -04:00 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SqlApiPostman.Models.DTOs.ProductDTO]]] GetProducts() on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:46:40.645 -04:00 [INF] Fetching all products
+2025-05-31 13:46:40.646 -04:00 [INF] Fetching all products from the database.
+2025-05-31 13:46:40.664 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+2025-05-31 13:46:40.668 -04:00 [INF] Found 7 products.
+2025-05-31 13:46:40.670 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SqlApiPostman.Models.DTOs.ProductDTO, SqlApiPostman, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-31 13:46:40.671 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman) in 26.6573ms
+2025-05-31 13:46:40.673 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:46:40.675 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/product - 200 null application/json; charset=utf-8 37.1063ms
+2025-05-31 13:46:59.074 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5029/api/Product - application/json 177
+2025-05-31 13:46:59.084 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5029/api/Product - 307 0 null 9.7538ms
+2025-05-31 13:46:59.085 -04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7001/api/Product - application/json 177
+2025-05-31 13:46:59.094 -04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7001/api/Product - 404 0 null 8.6901ms
+2025-05-31 13:46:59.098 -04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: PUT https://localhost:7001/api/Product, Response status code: 404
+2025-05-31 13:47:05.461 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5029/Product - application/json 177
+2025-05-31 13:47:05.467 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5029/Product - 307 0 null 5.6581ms
+2025-05-31 13:47:05.468 -04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7001/Product - application/json 177
+2025-05-31 13:47:05.475 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 13:47:05.481 -04:00 [INF] Route matched with {action = "UpdateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateProduct(SqlApiPostman.Models.DTOs.ProductDTO) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:47:05.486 -04:00 [INF] Updating product with ID: 6.
+2025-05-31 13:47:05.530 -04:00 [INF] Executed DbCommand (4ms) [Parameters=[@__productDTO_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Products] AS [p]
+        WHERE [p].[Id] = @__productDTO_Id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-31 13:47:05.537 -04:00 [WRN] Product with ID: 6 not found for update.
+2025-05-31 13:47:05.538 -04:00 [WRN] Product with ID: 6 not found for update.
+2025-05-31 13:47:05.541 -04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-05-31 13:47:05.564 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman) in 80.5875ms
+2025-05-31 13:47:05.567 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 13:47:05.568 -04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7001/Product - 404 null application/problem+json; charset=utf-8 99.8771ms
+2025-05-31 13:47:17.692 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5029/Product - application/json 177
+2025-05-31 13:47:17.698 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5029/Product - 307 0 null 6.8163ms
+2025-05-31 13:47:17.700 -04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7001/Product - application/json 177
+2025-05-31 13:47:17.707 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 13:47:17.708 -04:00 [INF] Route matched with {action = "UpdateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateProduct(SqlApiPostman.Models.DTOs.ProductDTO) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:47:17.712 -04:00 [INF] Updating product with ID: 6.
+2025-05-31 13:47:17.731 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[@__productDTO_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Products] AS [p]
+        WHERE [p].[Id] = @__productDTO_Id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-31 13:47:17.734 -04:00 [WRN] Product with ID: 6 not found for update.
+2025-05-31 13:47:17.735 -04:00 [WRN] Product with ID: 6 not found for update.
+2025-05-31 13:47:17.736 -04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-05-31 13:47:17.738 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman) in 26.079ms
+2025-05-31 13:47:17.739 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 13:47:17.741 -04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7001/Product - 404 null application/problem+json; charset=utf-8 40.8422ms
+2025-05-31 13:47:37.649 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5029/Product/6 - application/json 177
+2025-05-31 13:47:37.656 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5029/Product/6 - 307 0 null 7.0832ms
+2025-05-31 13:47:37.659 -04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7001/Product/6 - application/json 177
+2025-05-31 13:47:37.664 -04:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-05-31 13:47:37.666 -04:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-05-31 13:47:37.668 -04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7001/Product/6 - 405 0 null 9.8989ms
+2025-05-31 13:47:43.533 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5029/Product - application/json 177
+2025-05-31 13:47:43.541 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5029/Product - 307 0 null 8.0214ms
+2025-05-31 13:47:43.543 -04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7001/Product - application/json 177
+2025-05-31 13:47:43.548 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 13:47:43.550 -04:00 [INF] Route matched with {action = "UpdateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateProduct(SqlApiPostman.Models.DTOs.ProductDTO) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:47:43.553 -04:00 [INF] Updating product with ID: 6.
+2025-05-31 13:47:43.571 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__productDTO_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Products] AS [p]
+        WHERE [p].[Id] = @__productDTO_Id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-31 13:47:43.574 -04:00 [WRN] Product with ID: 6 not found for update.
+2025-05-31 13:47:43.575 -04:00 [WRN] Product with ID: 6 not found for update.
+2025-05-31 13:47:43.576 -04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-05-31 13:47:43.579 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman) in 25.7087ms
+2025-05-31 13:47:43.580 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 13:47:43.582 -04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7001/Product - 404 null application/problem+json; charset=utf-8 38.2361ms
+2025-05-31 13:47:49.843 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5029/Product - application/json 177
+2025-05-31 13:47:49.846 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5029/Product - 307 0 null 3.8617ms
+2025-05-31 13:47:49.848 -04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7001/Product - application/json 177
+2025-05-31 13:47:49.853 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 13:47:49.855 -04:00 [INF] Route matched with {action = "UpdateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateProduct(SqlApiPostman.Models.DTOs.ProductDTO) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:47:49.860 -04:00 [INF] Updating product with ID: 5.
+2025-05-31 13:47:49.876 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__productDTO_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Products] AS [p]
+        WHERE [p].[Id] = @__productDTO_Id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-31 13:47:49.880 -04:00 [WRN] Product with ID: 5 not found for update.
+2025-05-31 13:47:49.881 -04:00 [WRN] Product with ID: 5 not found for update.
+2025-05-31 13:47:49.882 -04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-05-31 13:47:49.884 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman) in 24.8702ms
+2025-05-31 13:47:49.886 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 13:47:49.888 -04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7001/Product - 404 null application/problem+json; charset=utf-8 40.2144ms
+2025-05-31 13:48:28.181 -04:00 [INF] Now listening on: https://localhost:7001
+2025-05-31 13:48:28.239 -04:00 [INF] Now listening on: http://localhost:5029
+2025-05-31 13:48:28.403 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-31 13:48:28.406 -04:00 [INF] Hosting environment: Development
+2025-05-31 13:48:28.407 -04:00 [INF] Content root path: C:\Users\Ahmed\workspace\repositories\WebAPIwithEntityNPostman\SqlApiPostman
+2025-05-31 13:48:29.207 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7001/Product - null null
+2025-05-31 13:48:29.365 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:48:29.396 -04:00 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SqlApiPostman.Models.DTOs.ProductDTO]]] GetProducts() on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:48:29.651 -04:00 [INF] Fetching all products
+2025-05-31 13:48:29.656 -04:00 [INF] Fetching all products from the database.
+2025-05-31 13:48:30.256 -04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-05-31 13:48:30.932 -04:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+2025-05-31 13:48:31.030 -04:00 [INF] Found 7 products.
+2025-05-31 13:48:31.040 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SqlApiPostman.Models.DTOs.ProductDTO, SqlApiPostman, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-31 13:48:31.060 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman) in 1658.2198ms
+2025-05-31 13:48:31.068 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:48:31.083 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7001/Product - 200 null application/json; charset=utf-8 1885.4881ms
+2025-05-31 13:48:44.807 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5029/Product - application/json 177
+2025-05-31 13:48:44.827 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5029/Product - 307 0 null 19.5397ms
+2025-05-31 13:48:44.851 -04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7001/Product - application/json 177
+2025-05-31 13:48:44.855 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 13:48:44.866 -04:00 [INF] Route matched with {action = "UpdateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateProduct(SqlApiPostman.Models.DTOs.ProductDTO) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:48:44.912 -04:00 [INF] Updating product with ID: 5.
+2025-05-31 13:48:50.678 -04:00 [INF] Executed DbCommand (28ms) [Parameters=[@__productDTO_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Products] AS [p]
+        WHERE [p].[Id] = @__productDTO_Id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-31 13:48:50.685 -04:00 [WRN] Product with ID: 5 not found for update.
+2025-05-31 13:48:50.686 -04:00 [WRN] Product with ID: 5 not found for update.
+2025-05-31 13:48:50.688 -04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-05-31 13:48:50.707 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman) in 5838.9015ms
+2025-05-31 13:48:50.711 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 13:48:50.715 -04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7001/Product - 404 null application/problem+json; charset=utf-8 5864.0373ms
+2025-05-31 13:49:06.524 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5029/Product - application/json 180
+2025-05-31 13:49:06.529 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5029/Product - 307 0 null 5.4601ms
+2025-05-31 13:49:06.534 -04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7001/Product - application/json 180
+2025-05-31 13:49:06.541 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 13:49:06.542 -04:00 [INF] Route matched with {action = "UpdateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateProduct(SqlApiPostman.Models.DTOs.ProductDTO) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:49:06.549 -04:00 [INF] Updating product with ID: 1006.
+2025-05-31 13:49:17.153 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[@__productDTO_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Products] AS [p]
+        WHERE [p].[Id] = @__productDTO_Id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-31 13:49:17.329 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([Description], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2025-05-31 13:49:17.361 -04:00 [INF] Executed DbCommand (5ms) [Parameters=[@p7='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Products] SET [CategoryId] = @p2, [Description] = @p3, [Name] = @p4, [Price] = @p5, [StockQuantity] = @p6
+OUTPUT 1
+WHERE [Id] = @p7;
+2025-05-31 13:49:17.381 -04:00 [INF] Product with ID: 1006 updated successfully. Rows affected: 2
+2025-05-31 13:49:17.383 -04:00 [INF] Product with ID: 1006 updated successfully.
+2025-05-31 13:49:17.388 -04:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-05-31 13:49:17.389 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman) in 10845.1426ms
+2025-05-31 13:49:17.390 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 13:49:17.391 -04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7001/Product - 204 null null 10857.7163ms
+2025-05-31 13:49:24.754 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/product - null null
+2025-05-31 13:49:24.759 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:49:24.761 -04:00 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SqlApiPostman.Models.DTOs.ProductDTO]]] GetProducts() on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:49:24.764 -04:00 [INF] Fetching all products
+2025-05-31 13:49:24.766 -04:00 [INF] Fetching all products from the database.
+2025-05-31 13:49:24.782 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+2025-05-31 13:49:24.785 -04:00 [INF] Found 7 products.
+2025-05-31 13:49:24.787 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SqlApiPostman.Models.DTOs.ProductDTO, SqlApiPostman, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-31 13:49:24.789 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman) in 24.6772ms
+2025-05-31 13:49:24.791 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:49:24.793 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/product - 200 null application/json; charset=utf-8 38.6885ms
+2025-05-31 13:50:33.864 -04:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7001/product/1 - application/json null
+2025-05-31 13:50:33.869 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.DeleteProduct (SqlApiPostman)'
+2025-05-31 13:50:33.875 -04:00 [INF] Route matched with {action = "DeleteProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteProduct(Int32) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:50:33.883 -04:00 [INF] Deleting product with ID: 1.
+2025-05-31 13:50:33.885 -04:00 [INF] Deleting product with ID: 1 from the database.
+2025-05-31 13:50:33.942 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+WHERE [p].[Id] = @__p_0
+2025-05-31 13:50:33.968 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Products]
+OUTPUT 1
+WHERE [Id] = @p0;
+2025-05-31 13:50:33.974 -04:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-05-31 13:50:33.975 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.DeleteProduct (SqlApiPostman) in 94.8823ms
+2025-05-31 13:50:33.977 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.DeleteProduct (SqlApiPostman)'
+2025-05-31 13:50:33.979 -04:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7001/product/1 - 204 null null 115.146ms
+2025-05-31 13:50:42.467 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7001/Product - null null
+2025-05-31 13:50:42.486 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:50:42.488 -04:00 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SqlApiPostman.Models.DTOs.ProductDTO]]] GetProducts() on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:50:42.491 -04:00 [INF] Fetching all products
+2025-05-31 13:50:42.491 -04:00 [INF] Fetching all products from the database.
+2025-05-31 13:50:42.507 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+2025-05-31 13:50:42.511 -04:00 [INF] Found 6 products.
+2025-05-31 13:50:42.512 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SqlApiPostman.Models.DTOs.ProductDTO, SqlApiPostman, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-31 13:50:42.515 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman) in 24.117ms
+2025-05-31 13:50:42.517 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:50:42.519 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7001/Product - 200 null application/json; charset=utf-8 52.1837ms
+2025-05-31 13:50:51.422 -04:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7001/product/2 - application/json null
+2025-05-31 13:50:51.427 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.DeleteProduct (SqlApiPostman)'
+2025-05-31 13:50:51.428 -04:00 [INF] Route matched with {action = "DeleteProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteProduct(Int32) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:50:51.431 -04:00 [INF] Deleting product with ID: 2.
+2025-05-31 13:50:51.432 -04:00 [INF] Deleting product with ID: 2 from the database.
+2025-05-31 13:50:51.455 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+WHERE [p].[Id] = @__p_0
+2025-05-31 13:50:51.473 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Products]
+OUTPUT 1
+WHERE [Id] = @p0;
+2025-05-31 13:50:51.476 -04:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-05-31 13:50:51.478 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.DeleteProduct (SqlApiPostman) in 47.0566ms
+2025-05-31 13:50:51.479 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.DeleteProduct (SqlApiPostman)'
+2025-05-31 13:50:51.480 -04:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7001/product/2 - 204 null null 59.0251ms
+2025-05-31 13:50:54.802 -04:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7001/product/3 - application/json null
+2025-05-31 13:50:54.807 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.DeleteProduct (SqlApiPostman)'
+2025-05-31 13:50:54.809 -04:00 [INF] Route matched with {action = "DeleteProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteProduct(Int32) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:50:54.812 -04:00 [INF] Deleting product with ID: 3.
+2025-05-31 13:50:54.813 -04:00 [INF] Deleting product with ID: 3 from the database.
+2025-05-31 13:50:54.832 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+WHERE [p].[Id] = @__p_0
+2025-05-31 13:50:54.848 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Products]
+OUTPUT 1
+WHERE [Id] = @p0;
+2025-05-31 13:50:54.852 -04:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-05-31 13:50:54.854 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.DeleteProduct (SqlApiPostman) in 42.0955ms
+2025-05-31 13:50:54.855 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.DeleteProduct (SqlApiPostman)'
+2025-05-31 13:50:54.857 -04:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7001/product/3 - 204 null null 55.1876ms
+2025-05-31 13:50:58.076 -04:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7001/product/4 - application/json null
+2025-05-31 13:50:58.081 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.DeleteProduct (SqlApiPostman)'
+2025-05-31 13:50:58.082 -04:00 [INF] Route matched with {action = "DeleteProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteProduct(Int32) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:50:58.085 -04:00 [INF] Deleting product with ID: 4.
+2025-05-31 13:50:58.087 -04:00 [INF] Deleting product with ID: 4 from the database.
+2025-05-31 13:50:58.106 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+WHERE [p].[Id] = @__p_0
+2025-05-31 13:50:58.124 -04:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Products]
+OUTPUT 1
+WHERE [Id] = @p0;
+2025-05-31 13:50:58.127 -04:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-05-31 13:50:58.129 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.DeleteProduct (SqlApiPostman) in 44.6257ms
+2025-05-31 13:50:58.130 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.DeleteProduct (SqlApiPostman)'
+2025-05-31 13:50:58.131 -04:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7001/product/4 - 204 null null 55.1797ms
+2025-05-31 13:51:03.195 -04:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7001/product/5 - application/json null
+2025-05-31 13:51:03.201 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.DeleteProduct (SqlApiPostman)'
+2025-05-31 13:51:03.203 -04:00 [INF] Route matched with {action = "DeleteProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteProduct(Int32) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:51:03.208 -04:00 [INF] Deleting product with ID: 5.
+2025-05-31 13:51:03.209 -04:00 [INF] Deleting product with ID: 5 from the database.
+2025-05-31 13:51:03.228 -04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+WHERE [p].[Id] = @__p_0
+2025-05-31 13:51:03.231 -04:00 [WRN] Product with ID: 5 not found for deletion.
+2025-05-31 13:51:03.233 -04:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-05-31 13:51:03.234 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.DeleteProduct (SqlApiPostman) in 26.0116ms
+2025-05-31 13:51:03.235 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.DeleteProduct (SqlApiPostman)'
+2025-05-31 13:51:03.237 -04:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7001/product/5 - 204 null null 42.9681ms
+2025-05-31 13:51:07.041 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7001/Product - null null
+2025-05-31 13:51:07.051 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:51:07.053 -04:00 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SqlApiPostman.Models.DTOs.ProductDTO]]] GetProducts() on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:51:07.057 -04:00 [INF] Fetching all products
+2025-05-31 13:51:07.058 -04:00 [INF] Fetching all products from the database.
+2025-05-31 13:51:07.076 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+2025-05-31 13:51:07.079 -04:00 [INF] Found 3 products.
+2025-05-31 13:51:07.080 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SqlApiPostman.Models.DTOs.ProductDTO, SqlApiPostman, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-31 13:51:07.082 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman) in 25.4161ms
+2025-05-31 13:51:07.085 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:51:07.087 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7001/Product - 200 null application/json; charset=utf-8 45.8538ms
+2025-05-31 13:51:14.048 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/product/1 - null null
+2025-05-31 13:51:14.052 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProduct (SqlApiPostman)'
+2025-05-31 13:51:14.056 -04:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SqlApiPostman.Models.DTOs.ProductDTO]] GetProduct(Int32) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:51:14.062 -04:00 [INF] Fetching details for product with ID: 1.
+2025-05-31 13:51:14.064 -04:00 [INF] Fetching product with ID: 1 from the database.
+2025-05-31 13:51:14.083 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+WHERE [p].[Id] = @__p_0
+2025-05-31 13:51:14.089 -04:00 [WRN] Product with ID: 1 not found.
+2025-05-31 13:51:14.091 -04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-05-31 13:51:14.093 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProduct (SqlApiPostman) in 33.0377ms
+2025-05-31 13:51:14.095 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProduct (SqlApiPostman)'
+2025-05-31 13:51:14.096 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/product/1 - 404 null application/problem+json; charset=utf-8 48.6994ms
+2025-05-31 13:51:19.834 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/product/5 - null null
+2025-05-31 13:51:19.838 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProduct (SqlApiPostman)'
+2025-05-31 13:51:19.841 -04:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SqlApiPostman.Models.DTOs.ProductDTO]] GetProduct(Int32) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:51:19.845 -04:00 [INF] Fetching details for product with ID: 5.
+2025-05-31 13:51:19.846 -04:00 [INF] Fetching product with ID: 5 from the database.
+2025-05-31 13:51:19.866 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+WHERE [p].[Id] = @__p_0
+2025-05-31 13:51:19.869 -04:00 [WRN] Product with ID: 5 not found.
+2025-05-31 13:51:19.870 -04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-05-31 13:51:19.872 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProduct (SqlApiPostman) in 27.688ms
+2025-05-31 13:51:19.874 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProduct (SqlApiPostman)'
+2025-05-31 13:51:19.876 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/product/5 - 404 null application/problem+json; charset=utf-8 41.948ms
+2025-05-31 13:51:26.818 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/product/1004 - null null
+2025-05-31 13:51:26.824 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProduct (SqlApiPostman)'
+2025-05-31 13:51:26.825 -04:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SqlApiPostman.Models.DTOs.ProductDTO]] GetProduct(Int32) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:51:26.828 -04:00 [INF] Fetching details for product with ID: 1004.
+2025-05-31 13:51:26.830 -04:00 [INF] Fetching product with ID: 1004 from the database.
+2025-05-31 13:51:26.849 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+WHERE [p].[Id] = @__p_0
+2025-05-31 13:51:26.855 -04:00 [INF] Executing OkObjectResult, writing value of type 'SqlApiPostman.Models.DTOs.ProductDTO'.
+2025-05-31 13:51:26.856 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProduct (SqlApiPostman) in 28.9803ms
+2025-05-31 13:51:26.858 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProduct (SqlApiPostman)'
+2025-05-31 13:51:26.860 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/product/1004 - 200 null application/json; charset=utf-8 41.9597ms
+2025-05-31 13:51:34.686 -04:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7001/product/6 - application/json null
+2025-05-31 13:51:34.690 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.DeleteProduct (SqlApiPostman)'
+2025-05-31 13:51:34.691 -04:00 [INF] Route matched with {action = "DeleteProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteProduct(Int32) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:51:34.694 -04:00 [INF] Deleting product with ID: 6.
+2025-05-31 13:51:34.695 -04:00 [INF] Deleting product with ID: 6 from the database.
+2025-05-31 13:51:34.713 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+WHERE [p].[Id] = @__p_0
+2025-05-31 13:51:34.717 -04:00 [WRN] Product with ID: 6 not found for deletion.
+2025-05-31 13:51:34.718 -04:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-05-31 13:51:34.719 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.DeleteProduct (SqlApiPostman) in 25.443ms
+2025-05-31 13:51:34.720 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.DeleteProduct (SqlApiPostman)'
+2025-05-31 13:51:34.722 -04:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7001/product/6 - 204 null null 35.8281ms
+2025-05-31 13:52:38.319 -04:00 [INF] Now listening on: https://localhost:7001
+2025-05-31 13:52:38.377 -04:00 [INF] Now listening on: http://localhost:5029
+2025-05-31 13:52:38.541 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-31 13:52:38.543 -04:00 [INF] Hosting environment: Development
+2025-05-31 13:52:38.545 -04:00 [INF] Content root path: C:\Users\Ahmed\workspace\repositories\WebAPIwithEntityNPostman\SqlApiPostman
+2025-05-31 13:52:39.290 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7001/Product - null null
+2025-05-31 13:52:39.456 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:52:39.485 -04:00 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SqlApiPostman.Models.DTOs.ProductDTO]]] GetProducts() on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:52:39.743 -04:00 [INF] Fetching all products
+2025-05-31 13:52:39.748 -04:00 [INF] Fetching all products from the database.
+2025-05-31 13:52:40.284 -04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-05-31 13:52:40.943 -04:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+2025-05-31 13:52:41.052 -04:00 [INF] Found 3 products.
+2025-05-31 13:52:41.063 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SqlApiPostman.Models.DTOs.ProductDTO, SqlApiPostman, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-31 13:52:41.084 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman) in 1591.9364ms
+2025-05-31 13:52:41.090 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 13:52:41.107 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7001/Product - 200 null application/json; charset=utf-8 1827.0287ms
+2025-05-31 13:52:48.167 -04:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7001/product/6 - application/json null
+2025-05-31 13:52:48.173 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.DeleteProduct (SqlApiPostman)'
+2025-05-31 13:52:48.184 -04:00 [INF] Route matched with {action = "DeleteProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteProduct(Int32) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 13:52:48.208 -04:00 [INF] Deleting product with ID: 6.
+2025-05-31 13:52:48.211 -04:00 [INF] Deleting product with ID: 6 from the database.
+2025-05-31 13:52:48.403 -04:00 [INF] Executed DbCommand (35ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+WHERE [p].[Id] = @__p_0
+2025-05-31 13:52:48.410 -04:00 [WRN] Product with ID: 6 not found for deletion.
+2025-05-31 13:52:48.414 -04:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-05-31 13:52:48.415 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.DeleteProduct (SqlApiPostman) in 229.37ms
+2025-05-31 13:52:48.417 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.DeleteProduct (SqlApiPostman)'
+2025-05-31 13:52:48.420 -04:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7001/product/6 - 204 null null 253.239ms
+2025-05-31 14:08:35.766 -04:00 [INF] Now listening on: https://localhost:7001
+2025-05-31 14:08:35.838 -04:00 [INF] Now listening on: http://localhost:5029
+2025-05-31 14:08:35.968 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-31 14:08:35.970 -04:00 [INF] Hosting environment: Development
+2025-05-31 14:08:35.971 -04:00 [INF] Content root path: C:\Users\Ahmed\workspace\repositories\WebAPIwithEntityNPostman\SqlApiPostman
+2025-05-31 14:08:36.691 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7001/Product - null null
+2025-05-31 14:08:36.867 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 14:08:36.896 -04:00 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SqlApiPostman.Models.DTOs.ProductDTO]]] GetProducts() on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 14:08:37.157 -04:00 [INF] Fetching all products
+2025-05-31 14:08:37.160 -04:00 [INF] Fetching all products from the database.
+2025-05-31 14:08:37.799 -04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-05-31 14:08:38.536 -04:00 [INF] Executed DbCommand (45ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+2025-05-31 14:08:38.647 -04:00 [INF] Found 3 products.
+2025-05-31 14:08:38.657 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SqlApiPostman.Models.DTOs.ProductDTO, SqlApiPostman, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-31 14:08:38.685 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman) in 1779.5791ms
+2025-05-31 14:08:38.690 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 14:08:38.703 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7001/Product - 200 null application/json; charset=utf-8 2024.4265ms
+2025-05-31 14:08:58.684 -04:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7001/product/1004 - application/json null
+2025-05-31 14:08:58.693 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.DeleteProduct (SqlApiPostman)'
+2025-05-31 14:08:58.705 -04:00 [INF] Route matched with {action = "DeleteProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteProduct(Int32) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 14:08:58.737 -04:00 [INF] Deleting product with ID: 1004.
+2025-05-31 14:08:58.741 -04:00 [INF] Deleting product with ID: 1004 from the database.
+2025-05-31 14:08:58.937 -04:00 [INF] Executed DbCommand (27ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+WHERE [p].[Id] = @__p_0
+2025-05-31 14:09:17.672 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Products]
+OUTPUT 1
+WHERE [Id] = @p0;
+2025-05-31 14:09:25.641 -04:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-05-31 14:09:25.644 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.DeleteProduct (SqlApiPostman) in 26932.1279ms
+2025-05-31 14:09:25.645 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.DeleteProduct (SqlApiPostman)'
+2025-05-31 14:09:25.649 -04:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7001/product/1004 - 204 null null 26965.4213ms
+2025-05-31 14:09:33.724 -04:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7001/product/1004 - application/json null
+2025-05-31 14:09:33.731 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.DeleteProduct (SqlApiPostman)'
+2025-05-31 14:09:33.733 -04:00 [INF] Route matched with {action = "DeleteProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteProduct(Int32) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 14:09:33.743 -04:00 [INF] Deleting product with ID: 1004.
+2025-05-31 14:09:33.744 -04:00 [INF] Deleting product with ID: 1004 from the database.
+2025-05-31 14:09:33.836 -04:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+WHERE [p].[Id] = @__p_0
+2025-05-31 14:09:39.114 -04:00 [WRN] Product with ID: 1004 passed Id check but was not deleted
+2025-05-31 14:09:39.119 -04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-05-31 14:09:39.145 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.DeleteProduct (SqlApiPostman) in 5407.7126ms
+2025-05-31 14:09:39.149 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.DeleteProduct (SqlApiPostman)'
+2025-05-31 14:09:39.152 -04:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7001/product/1004 - 404 null application/problem+json; charset=utf-8 5428.0187ms
+2025-05-31 14:12:40.725 -04:00 [INF] Now listening on: https://localhost:7001
+2025-05-31 14:12:40.775 -04:00 [INF] Now listening on: http://localhost:5029
+2025-05-31 14:12:40.912 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-31 14:12:40.914 -04:00 [INF] Hosting environment: Development
+2025-05-31 14:12:40.917 -04:00 [INF] Content root path: C:\Users\Ahmed\workspace\repositories\WebAPIwithEntityNPostman\SqlApiPostman
+2025-05-31 14:12:41.947 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7001/Product - null null
+2025-05-31 14:12:42.124 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 14:12:42.158 -04:00 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SqlApiPostman.Models.DTOs.ProductDTO]]] GetProducts() on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 14:12:42.413 -04:00 [INF] Fetching all products
+2025-05-31 14:12:42.417 -04:00 [INF] Fetching all products from the database.
+2025-05-31 14:12:42.967 -04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-05-31 14:12:43.682 -04:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+2025-05-31 14:12:43.809 -04:00 [INF] Found 2 products.
+2025-05-31 14:12:43.817 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SqlApiPostman.Models.DTOs.ProductDTO, SqlApiPostman, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-31 14:12:43.836 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman) in 1669.9112ms
+2025-05-31 14:12:43.841 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 14:12:43.855 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7001/Product - 200 null application/json; charset=utf-8 1920.4052ms
+2025-05-31 14:12:48.859 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7001/Product - null null
+2025-05-31 14:12:48.870 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 14:12:48.872 -04:00 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SqlApiPostman.Models.DTOs.ProductDTO]]] GetProducts() on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 14:12:48.876 -04:00 [INF] Fetching all products
+2025-05-31 14:12:48.877 -04:00 [INF] Fetching all products from the database.
+2025-05-31 14:12:48.917 -04:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+2025-05-31 14:12:48.921 -04:00 [INF] Found 2 products.
+2025-05-31 14:12:48.923 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SqlApiPostman.Models.DTOs.ProductDTO, SqlApiPostman, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-31 14:12:48.926 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman) in 51.4103ms
+2025-05-31 14:12:48.929 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 14:12:48.931 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7001/Product - 200 null application/json; charset=utf-8 72.1417ms
+2025-05-31 14:12:55.229 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/product/1004 - null null
+2025-05-31 14:12:55.235 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProduct (SqlApiPostman)'
+2025-05-31 14:12:55.247 -04:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SqlApiPostman.Models.DTOs.ProductDTO]] GetProduct(Int32) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 14:12:55.276 -04:00 [INF] Fetching details for product with ID: 1004.
+2025-05-31 14:12:55.280 -04:00 [INF] Fetching product with ID: 1004 from the database.
+2025-05-31 14:12:55.465 -04:00 [INF] Executed DbCommand (22ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+WHERE [p].[Id] = @__p_0
+2025-05-31 14:12:55.476 -04:00 [WRN] Product with ID: 1004 not found.
+2025-05-31 14:12:55.478 -04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-05-31 14:12:55.500 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProduct (SqlApiPostman) in 250.07ms
+2025-05-31 14:12:55.505 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProduct (SqlApiPostman)'
+2025-05-31 14:12:55.508 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/product/1004 - 404 null application/problem+json; charset=utf-8 278.9473ms
+2025-05-31 14:13:00.334 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/product/1005 - null null
+2025-05-31 14:13:00.342 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProduct (SqlApiPostman)'
+2025-05-31 14:13:00.344 -04:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SqlApiPostman.Models.DTOs.ProductDTO]] GetProduct(Int32) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 14:13:00.347 -04:00 [INF] Fetching details for product with ID: 1005.
+2025-05-31 14:13:00.348 -04:00 [INF] Fetching product with ID: 1005 from the database.
+2025-05-31 14:13:00.370 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+WHERE [p].[Id] = @__p_0
+2025-05-31 14:13:00.376 -04:00 [INF] Executing OkObjectResult, writing value of type 'SqlApiPostman.Models.DTOs.ProductDTO'.
+2025-05-31 14:13:00.378 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProduct (SqlApiPostman) in 32.3057ms
+2025-05-31 14:13:00.380 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProduct (SqlApiPostman)'
+2025-05-31 14:13:00.382 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/product/1005 - 200 null application/json; charset=utf-8 48.0752ms
+2025-05-31 14:13:07.088 -04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7001/product - application/json 276
+2025-05-31 14:13:07.095 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.CreateProduct (SqlApiPostman)'
+2025-05-31 14:13:07.100 -04:00 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SqlApiPostman.Models.DTOs.ProductDTO]] CreateProduct(SqlApiPostman.Models.DTOs.ProductDTO) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 14:13:07.314 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([Description], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2025-05-31 14:13:07.334 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([CategoryId], [Description], [Name], [Price], [StockQuantity])
+OUTPUT INSERTED.[Id]
+VALUES (@p2, @p3, @p4, @p5, @p6);
+2025-05-31 14:13:07.353 -04:00 [INF] Product with ID: 1007 added successfully.
+2025-05-31 14:13:07.355 -04:00 [INF] Created new product with ID: 0
+2025-05-31 14:13:07.359 -04:00 [INF] Executing CreatedAtActionResult, writing value of type 'SqlApiPostman.Models.DTOs.ProductDTO'.
+2025-05-31 14:13:07.382 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.CreateProduct (SqlApiPostman) in 280.9097ms
+2025-05-31 14:13:07.385 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.CreateProduct (SqlApiPostman)'
+2025-05-31 14:13:07.388 -04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7001/product - 201 null application/json; charset=utf-8 299.6767ms
+2025-05-31 14:13:11.730 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/product - null null
+2025-05-31 14:13:11.735 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 14:13:11.737 -04:00 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SqlApiPostman.Models.DTOs.ProductDTO]]] GetProducts() on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 14:13:11.739 -04:00 [INF] Fetching all products
+2025-05-31 14:13:11.740 -04:00 [INF] Fetching all products from the database.
+2025-05-31 14:13:11.761 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+2025-05-31 14:13:11.764 -04:00 [INF] Found 3 products.
+2025-05-31 14:13:11.765 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SqlApiPostman.Models.DTOs.ProductDTO, SqlApiPostman, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-31 14:13:11.767 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman) in 28.5684ms
+2025-05-31 14:13:11.769 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 14:13:11.770 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/product - 200 null application/json; charset=utf-8 40.7793ms
+2025-05-31 14:13:23.905 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5029/Product - application/json 180
+2025-05-31 14:13:23.910 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5029/Product - 307 0 null 5.2241ms
+2025-05-31 14:13:23.912 -04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7001/Product - application/json 180
+2025-05-31 14:13:23.919 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 14:13:23.923 -04:00 [INF] Route matched with {action = "UpdateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateProduct(SqlApiPostman.Models.DTOs.ProductDTO) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 14:13:23.927 -04:00 [INF] Updating product with ID: 1007.
+2025-05-31 14:13:23.970 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__productDTO_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Products] AS [p]
+        WHERE [p].[Id] = @__productDTO_Id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-31 14:13:23.996 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([Description], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2025-05-31 14:13:24.005 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@p7='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Products] SET [CategoryId] = @p2, [Description] = @p3, [Name] = @p4, [Price] = @p5, [StockQuantity] = @p6
+OUTPUT 1
+WHERE [Id] = @p7;
+2025-05-31 14:13:24.012 -04:00 [INF] Product with ID: 1007 updated successfully. Rows affected: 2
+2025-05-31 14:13:24.014 -04:00 [INF] Product with ID: 1007 updated successfully.
+2025-05-31 14:13:24.019 -04:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-05-31 14:13:24.020 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman) in 94.6206ms
+2025-05-31 14:13:24.021 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 14:13:24.023 -04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7001/Product - 204 null null 111.3644ms
+2025-05-31 14:13:31.571 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5029/Product - application/json 180
+2025-05-31 14:13:31.578 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5029/Product - 307 0 null 7.0186ms
+2025-05-31 14:13:31.579 -04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7001/Product - application/json 180
+2025-05-31 14:13:31.586 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 14:13:31.588 -04:00 [INF] Route matched with {action = "UpdateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateProduct(SqlApiPostman.Models.DTOs.ProductDTO) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 14:13:31.591 -04:00 [INF] Updating product with ID: 1007.
+2025-05-31 14:13:31.610 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[@__productDTO_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Products] AS [p]
+        WHERE [p].[Id] = @__productDTO_Id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-31 14:13:31.627 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([Description], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2025-05-31 14:13:31.631 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@p7='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Products] SET [CategoryId] = @p2, [Description] = @p3, [Name] = @p4, [Price] = @p5, [StockQuantity] = @p6
+OUTPUT 1
+WHERE [Id] = @p7;
+2025-05-31 14:13:31.635 -04:00 [INF] Product with ID: 1007 updated successfully. Rows affected: 2
+2025-05-31 14:13:31.636 -04:00 [INF] Product with ID: 1007 updated successfully.
+2025-05-31 14:13:31.638 -04:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-05-31 14:13:31.639 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman) in 48.5491ms
+2025-05-31 14:13:31.640 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 14:13:31.642 -04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7001/Product - 204 null null 62.8316ms
+2025-05-31 14:13:38.199 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7001/Product - null null
+2025-05-31 14:13:38.206 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 14:13:38.208 -04:00 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SqlApiPostman.Models.DTOs.ProductDTO]]] GetProducts() on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 14:13:38.211 -04:00 [INF] Fetching all products
+2025-05-31 14:13:38.212 -04:00 [INF] Fetching all products from the database.
+2025-05-31 14:13:38.229 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+2025-05-31 14:13:38.232 -04:00 [INF] Found 3 products.
+2025-05-31 14:13:38.233 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SqlApiPostman.Models.DTOs.ProductDTO, SqlApiPostman, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-31 14:13:38.236 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman) in 24.8957ms
+2025-05-31 14:13:38.238 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 14:13:38.240 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7001/Product - 200 null application/json; charset=utf-8 40.8494ms
+2025-05-31 14:13:45.915 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5029/Product - application/json 180
+2025-05-31 14:13:45.919 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5029/Product - 307 0 null 3.9879ms
+2025-05-31 14:13:45.921 -04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7001/Product - application/json 180
+2025-05-31 14:13:45.928 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 14:13:45.930 -04:00 [INF] Route matched with {action = "UpdateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateProduct(SqlApiPostman.Models.DTOs.ProductDTO) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 14:13:45.933 -04:00 [INF] Updating product with ID: 1007.
+2025-05-31 14:13:45.953 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__productDTO_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Products] AS [p]
+        WHERE [p].[Id] = @__productDTO_Id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-31 14:13:45.973 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([Description], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2025-05-31 14:13:45.980 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@p7='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Products] SET [CategoryId] = @p2, [Description] = @p3, [Name] = @p4, [Price] = @p5, [StockQuantity] = @p6
+OUTPUT 1
+WHERE [Id] = @p7;
+2025-05-31 14:13:45.985 -04:00 [INF] Product with ID: 1007 updated successfully. Rows affected: 2
+2025-05-31 14:13:45.986 -04:00 [INF] Product with ID: 1007 updated successfully.
+2025-05-31 14:13:45.987 -04:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-05-31 14:13:45.989 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman) in 56.6642ms
+2025-05-31 14:13:45.991 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 14:13:45.992 -04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7001/Product - 204 null null 71.0755ms
+2025-05-31 14:13:49.839 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7001/Product - null null
+2025-05-31 14:13:49.846 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 14:13:49.848 -04:00 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SqlApiPostman.Models.DTOs.ProductDTO]]] GetProducts() on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 14:13:49.851 -04:00 [INF] Fetching all products
+2025-05-31 14:13:49.853 -04:00 [INF] Fetching all products from the database.
+2025-05-31 14:13:49.872 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+2025-05-31 14:13:49.875 -04:00 [INF] Found 3 products.
+2025-05-31 14:13:49.876 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SqlApiPostman.Models.DTOs.ProductDTO, SqlApiPostman, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-31 14:13:49.878 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman) in 27.0986ms
+2025-05-31 14:13:49.881 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 14:13:49.883 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7001/Product - 200 null application/json; charset=utf-8 44.3905ms
+2025-05-31 14:13:56.454 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5029/Product - application/json 182
+2025-05-31 14:13:56.462 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5029/Product - 307 0 null 8.2068ms
+2025-05-31 14:13:56.464 -04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7001/Product - application/json 182
+2025-05-31 14:13:56.470 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 14:13:56.471 -04:00 [INF] Route matched with {action = "UpdateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateProduct(SqlApiPostman.Models.DTOs.ProductDTO) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 14:13:56.475 -04:00 [INF] Updating product with ID: 1007.
+2025-05-31 14:13:56.492 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__productDTO_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Products] AS [p]
+        WHERE [p].[Id] = @__productDTO_Id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-31 14:13:56.510 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([Description], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2025-05-31 14:13:56.517 -04:00 [INF] Executed DbCommand (4ms) [Parameters=[@p7='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Products] SET [CategoryId] = @p2, [Description] = @p3, [Name] = @p4, [Price] = @p5, [StockQuantity] = @p6
+OUTPUT 1
+WHERE [Id] = @p7;
+2025-05-31 14:13:56.522 -04:00 [INF] Product with ID: 1007 updated successfully. Rows affected: 2
+2025-05-31 14:13:56.523 -04:00 [INF] Product with ID: 1007 updated successfully.
+2025-05-31 14:13:56.524 -04:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-05-31 14:13:56.525 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman) in 51.494ms
+2025-05-31 14:13:56.527 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 14:13:56.529 -04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7001/Product - 204 null null 65.0885ms
+2025-05-31 14:13:58.063 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7001/Product - null null
+2025-05-31 14:13:58.069 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 14:13:58.072 -04:00 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SqlApiPostman.Models.DTOs.ProductDTO]]] GetProducts() on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 14:13:58.075 -04:00 [INF] Fetching all products
+2025-05-31 14:13:58.077 -04:00 [INF] Fetching all products from the database.
+2025-05-31 14:13:58.094 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+2025-05-31 14:13:58.098 -04:00 [INF] Found 3 products.
+2025-05-31 14:13:58.099 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SqlApiPostman.Models.DTOs.ProductDTO, SqlApiPostman, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-31 14:13:58.101 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman) in 25.6022ms
+2025-05-31 14:13:58.103 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 14:13:58.106 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7001/Product - 200 null application/json; charset=utf-8 43.0177ms
+2025-05-31 14:14:17.487 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5029/Product - application/json 182
+2025-05-31 14:14:17.495 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5029/Product - 307 0 null 7.7149ms
+2025-05-31 14:14:17.496 -04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7001/Product - application/json 182
+2025-05-31 14:14:17.504 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 14:14:17.506 -04:00 [INF] Route matched with {action = "UpdateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateProduct(SqlApiPostman.Models.DTOs.ProductDTO) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 14:14:17.508 -04:00 [INF] Updating product with ID: 1001.
+2025-05-31 14:14:17.525 -04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__productDTO_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Products] AS [p]
+        WHERE [p].[Id] = @__productDTO_Id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-31 14:14:17.528 -04:00 [WRN] Product with ID: 1001 not found for update.
+2025-05-31 14:14:17.529 -04:00 [WRN] Product with ID: 1001 not found for update.
+2025-05-31 14:14:17.530 -04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-05-31 14:14:17.533 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman) in 25.1165ms
+2025-05-31 14:14:17.535 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 14:14:17.537 -04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7001/Product - 404 null application/problem+json; charset=utf-8 40.4186ms
+2025-05-31 14:15:57.981 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5029/Product - application/json 157
+2025-05-31 14:15:57.987 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5029/Product - 307 0 null 7.5582ms
+2025-05-31 14:15:57.988 -04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7001/Product - application/json 157
+2025-05-31 14:15:58.008 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 14:15:58.010 -04:00 [INF] Route matched with {action = "UpdateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateProduct(SqlApiPostman.Models.DTOs.ProductDTO) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 14:15:58.013 -04:00 [INF] Updating product with ID: 1001.
+2025-05-31 14:15:58.031 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__productDTO_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Products] AS [p]
+        WHERE [p].[Id] = @__productDTO_Id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-31 14:15:58.036 -04:00 [WRN] Product with ID: 1001 not found for update.
+2025-05-31 14:15:58.037 -04:00 [WRN] Product with ID: 1001 not found for update.
+2025-05-31 14:15:58.038 -04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-05-31 14:15:58.040 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman) in 27.6267ms
+2025-05-31 14:15:58.042 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 14:15:58.044 -04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7001/Product - 404 null application/problem+json; charset=utf-8 55.6767ms
+2025-05-31 14:16:06.690 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5029/Product - application/json 167
+2025-05-31 14:16:06.695 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5029/Product - 307 0 null 5.4242ms
+2025-05-31 14:16:06.697 -04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7001/Product - application/json 167
+2025-05-31 14:16:06.706 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 14:16:06.708 -04:00 [INF] Route matched with {action = "UpdateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateProduct(SqlApiPostman.Models.DTOs.ProductDTO) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 14:16:06.712 -04:00 [INF] Updating product with ID: 0.
+2025-05-31 14:16:06.730 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__productDTO_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Products] AS [p]
+        WHERE [p].[Id] = @__productDTO_Id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-31 14:16:06.733 -04:00 [WRN] Product with ID: 0 not found for update.
+2025-05-31 14:16:06.734 -04:00 [WRN] Product with ID: 0 not found for update.
+2025-05-31 14:16:06.735 -04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-05-31 14:16:06.739 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman) in 27.6274ms
+2025-05-31 14:16:06.740 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 14:16:06.742 -04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7001/Product - 404 null application/problem+json; charset=utf-8 44.8136ms
+2025-05-31 14:19:09.537 -04:00 [INF] Now listening on: https://localhost:7001
+2025-05-31 14:19:09.577 -04:00 [INF] Now listening on: http://localhost:5029
+2025-05-31 14:19:09.755 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-31 14:19:09.757 -04:00 [INF] Hosting environment: Development
+2025-05-31 14:19:09.758 -04:00 [INF] Content root path: C:\Users\Ahmed\workspace\repositories\WebAPIwithEntityNPostman\SqlApiPostman
+2025-05-31 14:19:10.700 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7001/Product - null null
+2025-05-31 14:19:10.860 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 14:19:10.891 -04:00 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SqlApiPostman.Models.DTOs.ProductDTO]]] GetProducts() on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 14:19:11.146 -04:00 [INF] Fetching all products
+2025-05-31 14:19:11.150 -04:00 [INF] Fetching all products from the database.
+2025-05-31 14:19:11.670 -04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-05-31 14:19:12.354 -04:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+2025-05-31 14:19:12.456 -04:00 [INF] Found 3 products.
+2025-05-31 14:19:12.464 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SqlApiPostman.Models.DTOs.ProductDTO, SqlApiPostman, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-31 14:19:12.485 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman) in 1586.7469ms
+2025-05-31 14:19:12.492 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 14:19:12.506 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7001/Product - 200 null application/json; charset=utf-8 1815.8726ms
+2025-05-31 14:19:41.852 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5029/Product - application/json 157
+2025-05-31 14:19:41.869 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5029/Product - 307 0 null 17.4147ms
+2025-05-31 14:19:41.883 -04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7001/Product - application/json 157
+2025-05-31 14:19:41.888 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 14:19:41.899 -04:00 [INF] Route matched with {action = "UpdateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateProduct(SqlApiPostman.Models.DTOs.ProductDTO) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 14:19:41.938 -04:00 [INF] Updating product with ID: 1001.
+2025-05-31 14:19:42.096 -04:00 [INF] Executed DbCommand (33ms) [Parameters=[@__productDTO_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Products] AS [p]
+        WHERE [p].[Id] = @__productDTO_Id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-31 14:19:42.103 -04:00 [WRN] Product with ID: 1001 not found for update.
+2025-05-31 14:19:42.104 -04:00 [WRN] Product with ID: 1001 not found for update.
+2025-05-31 14:19:42.106 -04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-05-31 14:19:42.132 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman) in 230.5008ms
+2025-05-31 14:19:42.137 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 14:19:42.138 -04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7001/Product - 404 null application/problem+json; charset=utf-8 255.1194ms
+2025-05-31 14:20:10.409 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5029/Product - application/json 163
+2025-05-31 14:20:10.424 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5029/Product - 307 0 null 14.849ms
+2025-05-31 14:20:10.433 -04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7001/Product - application/json 163
+2025-05-31 14:20:10.438 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 14:20:10.440 -04:00 [INF] Route matched with {action = "UpdateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateProduct(SqlApiPostman.Models.DTOs.ProductDTO) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 14:20:10.455 -04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-05-31 14:20:10.462 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman) in 20.2404ms
+2025-05-31 14:20:10.464 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 14:20:10.465 -04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7001/Product - 400 null application/problem+json; charset=utf-8 32.2745ms
+2025-05-31 14:20:21.511 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5029/Product - application/json 162
+2025-05-31 14:20:21.515 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5029/Product - 307 0 null 4.3069ms
+2025-05-31 14:20:21.517 -04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7001/Product - application/json 162
+2025-05-31 14:20:21.524 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 14:20:21.526 -04:00 [INF] Route matched with {action = "UpdateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateProduct(SqlApiPostman.Models.DTOs.ProductDTO) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 14:20:21.530 -04:00 [INF] Updating product with ID: 1007.
+2025-05-31 14:20:21.619 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__productDTO_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Products] AS [p]
+        WHERE [p].[Id] = @__productDTO_Id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-31 14:20:21.813 -04:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([Description], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2025-05-31 14:20:21.847 -04:00 [INF] Executed DbCommand (6ms) [Parameters=[@p7='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Products] SET [CategoryId] = @p2, [Description] = @p3, [Name] = @p4, [Price] = @p5, [StockQuantity] = @p6
+OUTPUT 1
+WHERE [Id] = @p7;
+2025-05-31 14:20:21.871 -04:00 [INF] Product with ID: 1007 updated successfully. Rows affected: 2
+2025-05-31 14:20:21.873 -04:00 [INF] Product with ID: 1007 updated successfully.
+2025-05-31 14:20:21.878 -04:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-05-31 14:20:21.880 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman) in 350.9965ms
+2025-05-31 14:20:21.882 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 14:20:21.883 -04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7001/Product - 204 null null 366.872ms
+2025-05-31 14:20:26.892 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/product - null null
+2025-05-31 14:20:26.898 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 14:20:26.899 -04:00 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SqlApiPostman.Models.DTOs.ProductDTO]]] GetProducts() on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 14:20:26.901 -04:00 [INF] Fetching all products
+2025-05-31 14:20:26.902 -04:00 [INF] Fetching all products from the database.
+2025-05-31 14:20:26.919 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+2025-05-31 14:20:26.922 -04:00 [INF] Found 3 products.
+2025-05-31 14:20:26.924 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SqlApiPostman.Models.DTOs.ProductDTO, SqlApiPostman, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-31 14:20:26.926 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman) in 24.8156ms
+2025-05-31 14:20:26.928 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 14:20:26.930 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/product - 200 null application/json; charset=utf-8 37.6654ms
+2025-05-31 14:20:41.545 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7001/Product - null null
+2025-05-31 14:20:41.564 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 14:20:41.566 -04:00 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SqlApiPostman.Models.DTOs.ProductDTO]]] GetProducts() on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 14:20:41.568 -04:00 [INF] Fetching all products
+2025-05-31 14:20:41.569 -04:00 [INF] Fetching all products from the database.
+2025-05-31 14:20:41.585 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+2025-05-31 14:20:41.588 -04:00 [INF] Found 3 products.
+2025-05-31 14:20:41.589 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SqlApiPostman.Models.DTOs.ProductDTO, SqlApiPostman, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-31 14:20:41.591 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman) in 23.1391ms
+2025-05-31 14:20:41.593 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 14:20:41.595 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7001/Product - 200 null application/json; charset=utf-8 51.2449ms
+2025-05-31 14:20:57.896 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5029/Product - application/json 165
+2025-05-31 14:20:57.904 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5029/Product - 307 0 null 8.121ms
+2025-05-31 14:20:57.905 -04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7001/Product - application/json 165
+2025-05-31 14:20:57.914 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 14:20:57.915 -04:00 [INF] Route matched with {action = "UpdateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateProduct(SqlApiPostman.Models.DTOs.ProductDTO) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 14:20:57.918 -04:00 [INF] Updating product with ID: 1007.
+2025-05-31 14:20:57.936 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__productDTO_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Products] AS [p]
+        WHERE [p].[Id] = @__productDTO_Id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-31 14:20:57.957 -04:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([Description], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2025-05-31 14:20:57.963 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@p7='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Products] SET [CategoryId] = @p2, [Description] = @p3, [Name] = @p4, [Price] = @p5, [StockQuantity] = @p6
+OUTPUT 1
+WHERE [Id] = @p7;
+2025-05-31 14:20:57.967 -04:00 [INF] Product with ID: 1007 updated successfully. Rows affected: 2
+2025-05-31 14:20:57.968 -04:00 [INF] Product with ID: 1007 updated successfully.
+2025-05-31 14:20:57.970 -04:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-05-31 14:20:57.971 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman) in 54.0013ms
+2025-05-31 14:20:57.973 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 14:20:57.975 -04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7001/Product - 204 null null 69.9751ms
+2025-05-31 14:21:01.242 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/product - null null
+2025-05-31 14:21:01.247 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 14:21:01.249 -04:00 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SqlApiPostman.Models.DTOs.ProductDTO]]] GetProducts() on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 14:21:01.252 -04:00 [INF] Fetching all products
+2025-05-31 14:21:01.255 -04:00 [INF] Fetching all products from the database.
+2025-05-31 14:21:01.274 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+2025-05-31 14:21:01.277 -04:00 [INF] Found 3 products.
+2025-05-31 14:21:01.278 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SqlApiPostman.Models.DTOs.ProductDTO, SqlApiPostman, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-31 14:21:01.280 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman) in 28.2557ms
+2025-05-31 14:21:01.282 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 14:21:01.284 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/product - 200 null application/json; charset=utf-8 41.4303ms
+2025-05-31 14:21:27.930 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/product - null null
+2025-05-31 14:21:27.937 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 14:21:27.938 -04:00 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SqlApiPostman.Models.DTOs.ProductDTO]]] GetProducts() on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 14:21:27.940 -04:00 [INF] Fetching all products
+2025-05-31 14:21:27.941 -04:00 [INF] Fetching all products from the database.
+2025-05-31 14:21:27.958 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+2025-05-31 14:21:27.962 -04:00 [INF] Found 3 products.
+2025-05-31 14:21:27.963 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SqlApiPostman.Models.DTOs.ProductDTO, SqlApiPostman, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-31 14:21:27.965 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman) in 25.4277ms
+2025-05-31 14:21:27.967 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 14:21:27.969 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/product - 200 null application/json; charset=utf-8 39.254ms
+2025-05-31 14:21:49.064 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5029/Product - application/json 137
+2025-05-31 14:21:49.072 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5029/Product - 307 0 null 8.8761ms
+2025-05-31 14:21:49.075 -04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7001/Product - application/json 137
+2025-05-31 14:21:49.088 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 14:21:49.090 -04:00 [INF] Route matched with {action = "UpdateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateProduct(SqlApiPostman.Models.DTOs.ProductDTO) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 14:21:49.093 -04:00 [INF] Updating product with ID: 1007.
+2025-05-31 14:21:49.110 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__productDTO_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Products] AS [p]
+        WHERE [p].[Id] = @__productDTO_Id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-31 14:21:49.129 -04:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([Description], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2025-05-31 14:21:49.139 -04:00 [INF] Executed DbCommand (5ms) [Parameters=[@p7='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Products] SET [CategoryId] = @p2, [Description] = @p3, [Name] = @p4, [Price] = @p5, [StockQuantity] = @p6
+OUTPUT 1
+WHERE [Id] = @p7;
+2025-05-31 14:21:49.145 -04:00 [INF] Product with ID: 1007 updated successfully. Rows affected: 2
+2025-05-31 14:21:49.146 -04:00 [INF] Product with ID: 1007 updated successfully.
+2025-05-31 14:21:49.148 -04:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-05-31 14:21:49.150 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman) in 58.2469ms
+2025-05-31 14:21:49.153 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 14:21:49.156 -04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7001/Product - 204 null null 80.8731ms
+2025-05-31 14:21:53.475 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/product - null null
+2025-05-31 14:21:53.482 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 14:21:53.484 -04:00 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SqlApiPostman.Models.DTOs.ProductDTO]]] GetProducts() on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 14:21:53.486 -04:00 [INF] Fetching all products
+2025-05-31 14:21:53.488 -04:00 [INF] Fetching all products from the database.
+2025-05-31 14:21:53.505 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+2025-05-31 14:21:53.509 -04:00 [INF] Found 3 products.
+2025-05-31 14:21:53.510 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SqlApiPostman.Models.DTOs.ProductDTO, SqlApiPostman, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-31 14:21:53.512 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman) in 26.5717ms
+2025-05-31 14:21:53.514 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 14:21:53.515 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/product - 200 null application/json; charset=utf-8 40.0507ms
+2025-05-31 14:22:04.121 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7001/Product - null null
+2025-05-31 14:22:04.141 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 14:22:04.144 -04:00 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SqlApiPostman.Models.DTOs.ProductDTO]]] GetProducts() on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 14:22:04.146 -04:00 [INF] Fetching all products
+2025-05-31 14:22:04.148 -04:00 [INF] Fetching all products from the database.
+2025-05-31 14:22:04.163 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+2025-05-31 14:22:04.167 -04:00 [INF] Found 3 products.
+2025-05-31 14:22:04.168 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SqlApiPostman.Models.DTOs.ProductDTO, SqlApiPostman, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-31 14:22:04.170 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman) in 23.571ms
+2025-05-31 14:22:04.172 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 14:22:04.174 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7001/Product - 200 null application/json; charset=utf-8 52.2575ms
+2025-05-31 14:22:21.256 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5029/Product - application/json 180
+2025-05-31 14:22:21.260 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5029/Product - 307 0 null 3.8591ms
+2025-05-31 14:22:21.261 -04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7001/Product - application/json 180
+2025-05-31 14:22:21.270 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 14:22:21.272 -04:00 [INF] Route matched with {action = "UpdateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateProduct(SqlApiPostman.Models.DTOs.ProductDTO) on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 14:22:21.274 -04:00 [INF] Updating product with ID: 1007.
+2025-05-31 14:22:21.291 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[@__productDTO_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Products] AS [p]
+        WHERE [p].[Id] = @__productDTO_Id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-31 14:22:21.309 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([Description], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2025-05-31 14:22:21.312 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@p7='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Products] SET [CategoryId] = @p2, [Description] = @p3, [Name] = @p4, [Price] = @p5, [StockQuantity] = @p6
+OUTPUT 1
+WHERE [Id] = @p7;
+2025-05-31 14:22:21.316 -04:00 [INF] Product with ID: 1007 updated successfully. Rows affected: 2
+2025-05-31 14:22:21.318 -04:00 [INF] Product with ID: 1007 updated successfully.
+2025-05-31 14:22:21.319 -04:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-05-31 14:22:21.320 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman) in 46.4981ms
+2025-05-31 14:22:21.322 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.UpdateProduct (SqlApiPostman)'
+2025-05-31 14:22:21.324 -04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7001/Product - 204 null null 62.6979ms
+2025-05-31 14:22:24.928 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/product - null null
+2025-05-31 14:22:24.936 -04:00 [INF] Executing endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 14:22:24.938 -04:00 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SqlApiPostman.Models.DTOs.ProductDTO]]] GetProducts() on controller SqlApiPostman.Controllers.ProductController (SqlApiPostman).
+2025-05-31 14:22:24.941 -04:00 [INF] Fetching all products
+2025-05-31 14:22:24.942 -04:00 [INF] Fetching all products from the database.
+2025-05-31 14:22:24.962 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Description], [p].[Name], [p].[Price], [p].[StockQuantity]
+FROM [Products] AS [p]
+2025-05-31 14:22:24.968 -04:00 [INF] Found 3 products.
+2025-05-31 14:22:24.969 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SqlApiPostman.Models.DTOs.ProductDTO, SqlApiPostman, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-31 14:22:24.971 -04:00 [INF] Executed action SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman) in 30.6314ms
+2025-05-31 14:22:24.973 -04:00 [INF] Executed endpoint 'SqlApiPostman.Controllers.ProductController.GetProducts (SqlApiPostman)'
+2025-05-31 14:22:24.975 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/product - 200 null application/json; charset=utf-8 46.5272ms
