@@ -17,13 +17,26 @@ namespace SqlApiPostman.Repos.Repo
             _mapper = mapper;
             _logger = logger;
         }
+
         public async Task<IEnumerable<ProductDTO>> GetAllProductsAsync()
         {
             _logger.LogInformation("Fetching all products from the database.");
+            try
+            {
+                var product = await _context.Products.ToListAsync();
+                if (product == null || !product.Any())
+                {
+                    _logger.LogWarning("No products found in the database.");
+                    return Enumerable.Empty<ProductDTO>();
+                }
+                return _mapper.Map<IEnumerable<ProductDTO>>(product);
 
-            var product = await _context.Products.ToListAsync();
-            return _mapper.Map<IEnumerable<ProductDTO>>(product);
-
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while fetching all products.");
+                throw new Exception("An error occurred while fetching all products.", ex);
+            }
         }
 
         public async Task<ProductDTO> GetProductByIdAsync(int id)

@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SqlApiPostman.Repos.IRepo;
-using SqlApiPostman.Models.Entities;
 using SqlApiPostman.Models.DTOs;
 using AutoMapper;
 
@@ -21,8 +20,12 @@ namespace SqlApiPostman.Controllers
             _mapper = mapper;
         }
 
+        /// <summary>
+        /// Fetches all products from MSSQL ProductRepo.
+        /// </summary>
+        /// <returns>Ok(product.Count() + Products[])</returns>
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ProductDTO>>> GetProducts()
+        public async Task<ActionResult<IEnumerable<ProductDTO>>> GetProductsAsync()
         {
             _logger.LogInformation("Fetching all products");
             try
@@ -34,7 +37,11 @@ namespace SqlApiPostman.Controllers
                     return NotFound("No products available.");
                 }
                 _logger.LogInformation($"Found {products.Count()} products.");
-                return Ok(products);
+                return Ok(new
+                {
+                    message = $"Found {products.Count()} products.",
+                    products = products
+                });
             }
             catch (Exception ex)
             {
@@ -43,21 +50,43 @@ namespace SqlApiPostman.Controllers
             }
         }
 
+        /// <summary>
+        /// first we make sure the id is provided, then
+        /// we try fetching specific product by ID from MSSQL ProductRepo.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns> we return NotFound if it comes back null or product with it's id</returns>
         [HttpGet("{id}")]
-        public async Task<ActionResult<ProductDTO>> GetProduct(int id)
+        public async Task<ActionResult<ProductDTO>> GetProductByIdAsync(int id)
         {
-            _logger.LogInformation($"Fetching details for product with ID: {id}.");
-            ProductDTO product = await _productRepo.GetProductByIdAsync(id);
-            if (product == null)
+            if (id <= 0)
             {
-                _logger.LogWarning($"Product with ID: {id} not found.");
-                return NotFound();
+                _logger.LogError("Invalid product ID provided.");
+                return BadRequest("Invalid product ID.");
             }
-            return Ok(product);
+            try
+            {
+                ProductDTO product = await _productRepo.GetProductByIdAsync(id);
+                if (product == null)
+                {
+                    _logger.LogWarning($"Product with ID: {id} not found.");
+                    return NotFound();
+                }
+                return Ok(new
+                {
+                    message = $"Product with ID: {id} found.",
+                    product = product
+                });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while fetching the product.");
+                return StatusCode(500, "Internal server error");
+            }
         }
 
         [HttpPost]
-        public async Task<ActionResult<ProductDTO>> CreateProduct([FromBody] ProductDTO product)
+        public async Task<ActionResult<ProductDTO>> CreateProductAsync([FromBody] ProductDTO product)
         {
 
             if (!ModelState.IsValid)
@@ -69,7 +98,7 @@ namespace SqlApiPostman.Controllers
             {
                 int result = await _productRepo.AddProductAsync(product);
                 _logger.LogInformation($"Created new product with ID: {product.Id}");
-                return CreatedAtAction(nameof(GetProduct), new { id = result }, product);
+                return CreatedAtAction(nameof(GetProductByIdAsync), new { id = result }, product);
             }
             catch (Exception ex)
             {
@@ -82,7 +111,7 @@ namespace SqlApiPostman.Controllers
         [HttpPut]
         public async Task<IActionResult> UpdateProduct([FromBody] ProductDTO productDTO)
         {
-            if (productDTO == null || productDTO.Id == null)
+            if (productDTO == null)
             {
                 _logger.LogError("Invalid product data for update.");
                 return BadRequest("Invalid product data.");
