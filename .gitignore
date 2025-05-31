@@ -28,3 +28,8 @@ bld/
 
 ## Visual Studio cache files
 *.[Cc]ache
+# Ignore log files
+logs/
+
+# Ignore Postman collections
+*.WebApiPractice.postman_collection.json
