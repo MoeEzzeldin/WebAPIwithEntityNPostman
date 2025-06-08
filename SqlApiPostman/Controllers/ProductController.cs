@@ -57,7 +57,7 @@ namespace SqlApiPostman.Controllers
         /// <param name="id"></param>
         /// <returns> we return NotFound if it comes back null or product with it's id</returns>
         [HttpGet("{id}")]
-        public async Task<ActionResult<ProductDTO>> GetProductAsync(int id)
+        public async Task<ActionResult<ProductDTO>> GetProductByIdAsync(int id)
         {
             if (id <= 0)
             {
@@ -66,6 +66,7 @@ namespace SqlApiPostman.Controllers
             }
             try
             {
+                _logger.LogInformation($"Fetching product with ID: {id} from the database.");
                 ProductDTO product = await _productRepo.GetProductByIdAsync(id);
                 if (product == null)
                 {
@@ -75,32 +76,41 @@ namespace SqlApiPostman.Controllers
                 return Ok(new
                 {
                     message = $"Product with ID: {id} found.",
-                    product = product
+                    Product = product
                 });
             }
             catch (KeyNotFoundException ex)
             {
                 _logger.LogError(ex, "An error occurred while fetching the product.");
-                return NotFound($"Product with ID: {id} not found.");
+                return StatusCode(404, "Product not found");
             }
         }
 
-
+        /// <summary>
+        /// Adds a new product to the MSSQL ProductRepo.
+        /// </summary>
+        /// <param name="product"></param>
+        /// <returns></returns>
         [HttpPost]
-        public async Task<ActionResult<ProductDTO>> CreateProductAsync([FromBody] ProductDTO product)
+        public async Task<ActionResult<ProductDTO>> AddProductAsync([FromBody] ProductDTO product)
         {
 
-            if (!ModelState.IsValid)
+            if (product == null)
             {
-                _logger.LogWarning("Invalid model state for product creation");
-                return BadRequest(ModelState);
+                _logger.LogError("Product data is null or invalid for creation.");
+                return BadRequest("Product data is null or invalid.");
             }
             try
             {
+                _logger.LogInformation("Adding a new product to the database.");
                 int newProductId = await _productRepo.AddProductAsync(product);
-                product.Id = newProductId;
-                _logger.LogInformation($"Created new product with ID: {product.Id}");
-                return Created();
+                if (newProductId <= 0)
+                {
+                    _logger.LogWarning("Product was not created successfully.");
+                    return StatusCode(500, "Internal server error while creating product");
+                }
+                _logger.LogInformation($"Created new product with ID: {newProductId}");
+                return CreatedAtAction(nameof(GetProductByIdAsync), new { id = newProductId}, newProductId);
             }
             catch (Exception ex)
             {
@@ -109,7 +119,11 @@ namespace SqlApiPostman.Controllers
             }
         }
 
-
+        /// <summary>
+        /// Updates an existing product in the MSSQL ProductRepo.
+        /// </summary>
+        /// <param name="productDTO"></param>
+        /// <returns></returns>
         [HttpPut]
         public async Task<IActionResult> UpdateProduct([FromBody] ProductDTO productDTO)
         {
@@ -126,8 +140,8 @@ namespace SqlApiPostman.Controllers
                     int updatedId = await _productRepo.UpdateProductAsync(productDTO);
                     if (updatedId <= 0)
                     {
-                        _logger.LogWarning($"Product was found, but not updated");
-                        return StatusCode(500, "Found Product, but error with UpdateProductAsync Repo");
+                        _logger.LogWarning($"Product with ID: {productDTO.Id} was not updated successfully.");
+                        return NotFound($"Product with ID: {productDTO.Id} not found for update.");
                     }
                     _logger.LogInformation($"Product with ID: {updatedId} updated successfully.");
                     return NoContent();
@@ -142,7 +156,11 @@ namespace SqlApiPostman.Controllers
             }
         }
 
-
+        /// <summary>
+        /// Deletes a product by ID from the MSSQL ProductRepo.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProduct(int id)

@@ -8,7 +8,7 @@ namespace SqlApiPostman.Repos.IRepo
         Task<CategoryDTO> GetCategoryByIdAsync(int id);
         Task<int> AddCategoryAsync(CategoryDTO category);
         Task<int> UpdateCategoryAsync(CategoryDTO category);
-        //Task<bool> DeleteCategoryAsync(CategoryDTO category);
+        Task<bool> DeleteCategoryAsync(int id);
 
     }
 }

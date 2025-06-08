@@ -5,14 +5,13 @@ using SqlApiPostman.Data;
 using Microsoft.EntityFrameworkCore;
 using SqlApiPostman.Repos.IRepo;
 
-
 namespace SqlApiPostman.Repos.Repo
 {
     public class CategoryRepo : ICategoryRepo
     {
+        private readonly ILogger<CategoryRepo> _logger;
         private readonly MyAppDbContext _context;
         private readonly IMapper _mapper;
-        private readonly ILogger<CategoryRepo> _logger;
 
         public CategoryRepo(MyAppDbContext context, IMapper mapper, ILogger<CategoryRepo> logger)
         {
@@ -23,7 +22,6 @@ namespace SqlApiPostman.Repos.Repo
 
         /// <summary>
         /// Fetches all categories from the MSSQL database.
-        /// fetches in a List to get Count then returning Enum type for flexibility.
         /// </summary>
         /// <returns></returns>
         /// <exception cref="Exception"></exception>
@@ -43,7 +41,7 @@ namespace SqlApiPostman.Repos.Repo
                 return Enumerable.Empty<CategoryDTO>();
             }
         }
-        
+
 
         /// <summary>
         /// Queries the database for a specific category by ID.
@@ -53,11 +51,6 @@ namespace SqlApiPostman.Repos.Repo
         /// <exception cref="ArgumentException"></exception>
         public async Task<CategoryDTO> GetCategoryByIdAsync(int id)
         {
-            if (id <= 0)
-            {
-                _logger.LogError("Attempted to fetch a category with an invalid ID.");
-                throw new KeyNotFoundException($"Entity with ID {id} not found.");
-            }
             try
             {
                 _logger.LogInformation($"Fetching category with ID: {id} from the database.");
@@ -82,18 +75,20 @@ namespace SqlApiPostman.Repos.Repo
             }
         }
 
-        public async Task<int> AddCategoryAsync(CategoryDTO categoryDto)
+        /// <summary>
+        /// Adds a new category to the database.
+        /// </summary>
+        /// <param name="categoryDto"></param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="Exception"></exception>
+        public async Task<int> AddCategoryAsync(CategoryDTO categoryDTO)
         {
-            if (categoryDto == null)
-            {
-                _logger.LogError("Attempted to add a null category.");
-                throw new ArgumentNullException(nameof(categoryDto), "Category cannot be null");
-            }
             try
             {
                 _logger.LogInformation("Adding a new category to the database.");
-                Category category = _mapper.Map<Category>(categoryDto);
-                _context.Categories.Add(category);
+                Category newCategory = _mapper.Map<Category>(categoryDTO);
+                await _context.Categories.AddAsync(newCategory);
                 int createdCategory = await _context.SaveChangesAsync();
                 if (createdCategory <= 0)
                 {
@@ -110,30 +105,33 @@ namespace SqlApiPostman.Repos.Repo
             }
         }
 
-        public async Task<int> UpdateCategoryAsync(CategoryDTO categoryDto)
+        /// <summary>
+        /// Updates an existing category in the database.
+        /// </summary>
+        /// <param name="categoryDTO"></param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="Exception"></exception>
+        public async Task<int> UpdateCategoryAsync(CategoryDTO categoryDTO)
         {
-            if (categoryDto == null)
-            {
-                _logger.LogError("Attempted to update a null category.");
-                throw new ArgumentNullException(nameof(categoryDto), "Category cannot be null");
-            }
             try
             {
-                _logger.LogInformation($"Updating category with ID: {categoryDto.Id} in the database.");
+                _logger.LogInformation($"Updating category with ID: {categoryDTO.Id} in the database.");
 
-                var existingCategory = await _context.Categories
-                    .FirstOrDefaultAsync(c => c.Id == categoryDto.Id);
+                Category? existingCategory = await _context.Categories
+                    .FirstOrDefaultAsync(c => c.Id == categoryDTO.Id);
 
                 if (existingCategory == null)
                 {
-                    _logger.LogWarning($"Category with ID: {categoryDto.Id} not found for update.");
+                    _logger.LogWarning($"Category with ID: {categoryDTO.Id} not found for update.");
                     return 0;
                 }
 
                 // Map updated fields from DTO to entity
-                _mapper.Map(categoryDto, existingCategory);
+                _mapper.Map(categoryDTO, existingCategory);
                 int rowsAffected = await _context.SaveChangesAsync();
-                _logger.LogInformation($"Category with ID: {categoryDto.Id} updated successfully.");
+
+                _logger.LogInformation($"Category with ID: {categoryDTO.Id} updated successfully.");
                 return rowsAffected > 0 ? existingCategory.Id : 0;
             }
             catch (Exception ex)
@@ -143,6 +141,30 @@ namespace SqlApiPostman.Repos.Repo
             }
         }
 
-
+        /// <summary>
+        /// Deletes a category from the database by its ID.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
+        public async Task<bool> DeleteCategoryAsync(int id)
+        {
+            try
+            {
+                Category? categoryToDelete = await _context.Categories.FirstOrDefaultAsync(c => c.Id == id);
+                if (categoryToDelete == null)
+                {
+                    _logger.LogWarning($"Category with ID: {id} not found for deletion.");
+                    return false;
+                }
+                _context.Categories.Remove(categoryToDelete);
+                return await _context.SaveChangesAsync() > 0;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"An error occurred while deleting the category with ID: {id}.");
+                throw new Exception($"An error occurred while deleting the category with ID: {id}.", ex);
+            }
+        }
     }
 }

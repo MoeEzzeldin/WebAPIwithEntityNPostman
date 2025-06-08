@@ -21,6 +21,11 @@ namespace SqlApiPostman.Controllers
             _mapper = mapper;
         }
 
+        /// <summary>
+        /// Fetches all categories from the MSSQL CategoryRepo.
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<CategoryDTO>>> GetAllCategoriesAsync()
         {
@@ -31,7 +36,7 @@ namespace SqlApiPostman.Controllers
                 if (categories == null || !categories.Any())
                 {
                     _logger.LogWarning("No categories found.");
-                    return NotFound(new { message = "No Categories Found"});
+                    return NotFound(new { message = "No Categories Found" });
                 }
                 _logger.LogInformation($"Found {categories.Count()} categories.");
                 return Ok(new
@@ -46,6 +51,12 @@ namespace SqlApiPostman.Controllers
                 throw new Exception("An error occurred while fetching categories.", ex);
             }
         }
+
+        /// <summary>
+        /// Fetches a specific category by ID from the MSSQL CategoryRepo.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("{id}")]
         public async Task<ActionResult<CategoryDTO>> GetCategoryById(int id)
         {
@@ -64,14 +75,24 @@ namespace SqlApiPostman.Controllers
                     return NotFound($"Category with ID: {id} not found.");
                 }
                 _logger.LogInformation($"Found category with ID: {id}");
-                return Ok(category);
+                return Ok(new
+                {
+                    message = $"Category with ID : {id} found successfully.",
+                    Category = category
+                });
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "An error occurred while fetching the category by ID.");
-                return StatusCode(500, "Internal server error");
+                return StatusCode(404, "Category Not Found");
             }
         }
+
+        /// <summary>
+        /// Adds a new category to the MSSQL CategoryRepo.
+        /// </summary>
+        /// <param name="category"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<ActionResult<int>> AddCategoryAsync([FromBody] CategoryDTO category)
         {
@@ -84,8 +105,13 @@ namespace SqlApiPostman.Controllers
             {
                 _logger.LogInformation("Adding a new category.");
                 int newCategoryId = await _categoryRepo.AddCategoryAsync(category);
+                if (newCategoryId <= 0)
+                {
+                    _logger.LogWarning("Failed to add the category.");
+                    return BadRequest("Failed to add the category.");
+                }
                 _logger.LogInformation($"New category added with ID: {newCategoryId}");
-                return CreatedAtAction(nameof(GetCategoryById), new { id = newCategoryId }, newCategoryId);
+                return CreatedAtAction(nameof(GetCategoryById), new { id = newCategoryId }, newCategoryId); // 201 Created
             }
             catch (Exception ex)
             {
@@ -93,6 +119,12 @@ namespace SqlApiPostman.Controllers
                 return StatusCode(500, "Internal server error");
             }
         }
+
+        /// <summary>
+        /// Updates an existing category in the MSSQL CategoryRepo.
+        /// </summary>
+        /// <param name="categoryDTO"></param>
+        /// <returns></returns>
         [HttpPut]
         public async Task<ActionResult> UpdateCategoryAsync([FromBody] CategoryDTO categoryDTO)
         {
@@ -103,12 +135,6 @@ namespace SqlApiPostman.Controllers
             }
             try
             {
-                CategoryDTO categoryExist = await _categoryRepo.GetCategoryByIdAsync(categoryDTO.Id);
-                if (categoryExist == null)
-                {
-                    _logger.LogWarning($"Category with ID: {categoryDTO.Id} not found for update.");
-                    return NotFound($"Category with ID: {categoryDTO.Id} not found.");
-                }
                 _logger.LogInformation($"Updating category with ID: {categoryDTO.Id}");
                 int updatedCategoryId = await _categoryRepo.UpdateCategoryAsync(categoryDTO);
                 if (updatedCategoryId <= 0)
@@ -125,5 +151,43 @@ namespace SqlApiPostman.Controllers
                 return StatusCode(500, "Internal server error");
             }
         }
+
+        /// <summary>
+        /// Deletes a category by ID from the MSSQL CategoryRepo.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> DeleteCategoryAsync(int id)
+        {
+            if (id <= 0)
+            {
+                _logger.LogError("Invalid category ID provided for deletion.");
+                return BadRequest("Invalid category ID.");
+            }
+            try
+            {
+                if(await _categoryRepo.GetCategoryByIdAsync(id) != null)
+                {
+                    // Assuming the repo has a method to delete by ID
+                    bool isDeleted = await _categoryRepo.DeleteCategoryAsync(id);
+                    if (!isDeleted)
+                    {
+                        _logger.LogWarning($"Failed to delete category with ID: {id}");
+                        return NotFound($"Failed to delete category with ID: {id}");
+                    }
+                    _logger.LogInformation($"Category with ID: {id} deleted successfully.");
+                    return NoContent();
+                }
+                _logger.LogWarning($"Category with ID: {id} not found for deletion.");
+                return NotFound($"Category with ID: {id} not found for deletion.");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while deleting the category.");
+                return StatusCode(500, "Internal server error");
+            }
+        }
+
     }
 }
