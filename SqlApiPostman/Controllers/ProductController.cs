@@ -39,7 +39,7 @@ namespace SqlApiPostman.Controllers
                 _logger.LogInformation($"Found {products.Count()} products.");
                 return Ok(new
                 {
-                    message = $"Found {products.Count()} products.",
+                    ProductCount = $"Found {products.Count()} products.",
                     products = products
                 });
             }
@@ -78,12 +78,13 @@ namespace SqlApiPostman.Controllers
                     product = product
                 });
             }
-            catch (Exception ex)
+            catch (KeyNotFoundException ex)
             {
                 _logger.LogError(ex, "An error occurred while fetching the product.");
-                return StatusCode(500, "Internal server error");
+                return NotFound($"Product with ID: {id} not found.");
             }
         }
+
 
         [HttpPost]
         public async Task<ActionResult<ProductDTO>> CreateProductAsync([FromBody] ProductDTO product)
@@ -112,28 +113,27 @@ namespace SqlApiPostman.Controllers
         [HttpPut]
         public async Task<IActionResult> UpdateProduct([FromBody] ProductDTO productDTO)
         {
-            if (productDTO == null)
+            if (productDTO == null || productDTO.Id <= 0)
             {
                 _logger.LogError("Invalid product data for update.");
                 return BadRequest("Invalid product data.");
             }
-
             try
             {
-                if(await _productRepo.GetProductByIdAsync(productDTO.Id) == null)
+                if(await _productRepo.GetProductByIdAsync(productDTO.Id) != null)
                 {
-                    _logger.LogWarning($"Product with ID: {productDTO.Id} not found for update.");
-                    return NotFound();
+                    _logger.LogInformation($"Updating product with ID: {productDTO.Id}.");
+                    int updatedId = await _productRepo.UpdateProductAsync(productDTO);
+                    if (updatedId <= 0)
+                    {
+                        _logger.LogWarning($"Product was found, but not updated");
+                        return StatusCode(500, "Found Product, but error with UpdateProductAsync Repo");
+                    }
+                    _logger.LogInformation($"Product with ID: {updatedId} updated successfully.");
+                    return NoContent();
                 }
-                _logger.LogInformation($"Updating product with ID: {productDTO.Id}.");
-                int updatedId = await _productRepo.UpdateProductAsync(productDTO);
-                if (updatedId == 0)
-                {
-                    _logger.LogWarning($"Product was found, but not updated");
-                    return StatusCode(500, "Found Product, but error with UpdateProductAsync Repo");
-                }
-                _logger.LogInformation($"Product with ID: {updatedId} updated successfully.");
-                return NoContent();
+                _logger.LogInformation($"Product with ID: {productDTO.Id} not found for update.");
+                return NotFound($"Product with ID: {productDTO.Id} not found.");
             }
             catch (Exception ex)
             {
@@ -154,21 +154,20 @@ namespace SqlApiPostman.Controllers
             }
             try
             {
-                ProductDTO productTODelete = await _productRepo.GetProductByIdAsync(id);
-                if (productTODelete == null)
+                if(await _productRepo.GetProductByIdAsync(id) != null)
                 {
-                    _logger.LogWarning($"Product with ID: {id} not found for deletion.");
-                    return NotFound();
+                    _logger.LogInformation($"Deleting product with ID: {id}.");
+                    bool deleted = await _productRepo.DeleteProductAsync(id);
+                    if (!deleted)
+                    {
+                        _logger.LogWarning($"Product with ID: {id} passed Id check but was not deleted");
+                        return StatusCode(500, "Internal server error");
+                    }
+                    _logger.LogInformation($"Product with ID: {id} deleted successfully.");
+                    return NoContent();
                 }
-                _logger.LogInformation($"Deleting product with ID: {id}.");
-                bool deleted = await _productRepo.DeleteProductAsync(productTODelete);
-                if (!deleted)
-                {
-                    _logger.LogWarning($"Product with ID: {id} passed Id check but was not deleted");
-                    return StatusCode(500, "Internal server error");
-                }
-                _logger.LogInformation($"Product with ID: {id} deleted successfully.");
-                return NoContent();
+                _logger.LogInformation($"Product with ID: {id} was not found");
+                return NotFound($"Product with ID: {id} not found.");
             }
             catch (Exception ex)
             {

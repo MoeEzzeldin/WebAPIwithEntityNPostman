@@ -22,7 +22,7 @@ namespace SqlApiPostman.Controllers
         }
 
         [HttpGet]
-        public async Task<IEnumerable<CategoryDTO>> GetAllCategoriesAsync()
+        public async Task<ActionResult<IEnumerable<CategoryDTO>>> GetAllCategoriesAsync()
         {
             _logger.LogInformation("Fetching all categories");
             try
@@ -31,10 +31,14 @@ namespace SqlApiPostman.Controllers
                 if (categories == null || !categories.Any())
                 {
                     _logger.LogWarning("No categories found.");
-                    return Enumerable.Empty<CategoryDTO>();
+                    return NotFound(new { message = "No Categories Found"});
                 }
                 _logger.LogInformation($"Found {categories.Count()} categories.");
-                return categories;
+                return Ok(new
+                {
+                    CategoryCount = $"Found {categories.Count()} categories.",
+                    Categories = categories
+                });
             }
             catch (Exception ex)
             {

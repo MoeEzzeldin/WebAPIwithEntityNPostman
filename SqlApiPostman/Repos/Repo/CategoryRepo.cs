@@ -23,6 +23,7 @@ namespace SqlApiPostman.Repos.Repo
 
         /// <summary>
         /// Fetches all categories from the MSSQL database.
+        /// fetches in a List to get Count then returning Enum type for flexibility.
         /// </summary>
         /// <returns></returns>
         /// <exception cref="Exception"></exception>
@@ -31,39 +32,48 @@ namespace SqlApiPostman.Repos.Repo
             try
             {
                 _logger.LogInformation("Fetching all categories from the database.");
-                var categories = await _context.Categories.ToListAsync();
-                if (categories == null || !categories.Any())
-                {
-                    _logger.LogWarning("No categories found in the database.");
-                    return Enumerable.Empty<CategoryDTO>();
-                }
-                _logger.LogInformation($"Found {categories.Count} categories.");
-                return _mapper.Map<IEnumerable<CategoryDTO>>(categories);
+                // build the query to fetch all categories
+                IQueryable<Category> query = _context.Categories.Include(p => p.Products).AsNoTracking(); ;
+                // execute the query and map the results to DTOs
+                return _mapper.Map<IEnumerable<CategoryDTO>>(await query.ToListAsync());
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "An error occurred while fetching all categories.");
-                throw new Exception("An error occurred while fetching all categories.", ex);
+                return Enumerable.Empty<CategoryDTO>();
             }
         }
+        
+
+        /// <summary>
+        /// Queries the database for a specific category by ID.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentException"></exception>
         public async Task<CategoryDTO> GetCategoryByIdAsync(int id)
         {
             if (id <= 0)
             {
                 _logger.LogError("Attempted to fetch a category with an invalid ID.");
-                throw new ArgumentException("ID must be greater than zero", nameof(id));
+                throw new KeyNotFoundException($"Entity with ID {id} not found.");
             }
             try
             {
                 _logger.LogInformation($"Fetching category with ID: {id} from the database.");
-                CategoryDTO category = _mapper.Map<CategoryDTO>(await _context.Categories.FindAsync(id));
+
+                IQueryable<Category> query = _context.Categories.AsNoTracking().Where(c => c.Id == id); ;
+
+                // execute the query and get the first or default result
+                Category category = await query.FirstOrDefaultAsync();
+
                 if (category == null)
                 {
                     _logger.LogWarning($"Category with ID: {id} not found.");
-                    return null;
+                    return new CategoryDTO();
                 }
                 _logger.LogInformation($"Category with ID: {id} found.");
-                return category;
+                return _mapper.Map<CategoryDTO>(category);
             }
             catch (Exception ex)
             {
@@ -111,9 +121,7 @@ namespace SqlApiPostman.Repos.Repo
             {
                 _logger.LogInformation($"Updating category with ID: {categoryDto.Id} in the database.");
 
-                // Fetch the existing entity
                 var existingCategory = await _context.Categories
-                    .Include(c => c.Products) // Include navigation if needed
                     .FirstOrDefaultAsync(c => c.Id == categoryDto.Id);
 
                 if (existingCategory == null)
@@ -124,7 +132,6 @@ namespace SqlApiPostman.Repos.Repo
 
                 // Map updated fields from DTO to entity
                 _mapper.Map(categoryDto, existingCategory);
-
                 int rowsAffected = await _context.SaveChangesAsync();
                 _logger.LogInformation($"Category with ID: {categoryDto.Id} updated successfully.");
                 return rowsAffected > 0 ? existingCategory.Id : 0;

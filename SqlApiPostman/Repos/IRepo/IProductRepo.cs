@@ -13,6 +13,6 @@ namespace SqlApiPostman.Repos.IRepo
         Task <ProductDTO> GetProductByIdAsync(int id);
         Task <int> AddProductAsync(ProductDTO product);
         Task <int> UpdateProductAsync(ProductDTO product);
-        Task <bool> DeleteProductAsync(ProductDTO product);
+        Task <bool> DeleteProductAsync(int id);
     }
 }
