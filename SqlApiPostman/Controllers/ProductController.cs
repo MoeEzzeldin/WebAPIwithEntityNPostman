@@ -68,7 +68,7 @@ namespace SqlApiPostman.Controllers
             {
                 _logger.LogInformation($"Fetching product with ID: {id} from the database.");
                 ProductDTO product = await _productRepo.GetProductByIdAsync(id);
-                if (product == null)
+                if (product.Id == 0)
                 {
                     _logger.LogWarning($"Product with ID: {id} not found.");
                     return NotFound();
@@ -110,7 +110,7 @@ namespace SqlApiPostman.Controllers
                     return StatusCode(500, "Internal server error while creating product");
                 }
                 _logger.LogInformation($"Created new product with ID: {newProductId}");
-                return CreatedAtAction(nameof(GetProductByIdAsync), new { id = newProductId}, newProductId);
+                return Created();
             }
             catch (Exception ex)
             {

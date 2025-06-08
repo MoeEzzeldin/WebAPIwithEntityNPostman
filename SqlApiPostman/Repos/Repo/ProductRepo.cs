@@ -57,7 +57,7 @@ namespace SqlApiPostman.Repos.Repo
                 IQueryable<Product> query = _context.Products.Include(p => p.Category).AsNoTracking().Where(p => p.Id == id);
                 // Execute the query and get the first or default result
                 Product? product = await query.FirstOrDefaultAsync();
-                if (product == null)
+                if (product == null || product.Id == 0)
                 {
                     _logger.LogWarning($"Product with ID: {id} not found.");
                     return new ProductDTO();

@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SqlApiPostman.Repos.IRepo;
 using SqlApiPostman.Models.DTOs;
-using SqlApiPostman.Models.Entities;
 using AutoMapper;
 
 namespace SqlApiPostman.Controllers
@@ -69,7 +68,7 @@ namespace SqlApiPostman.Controllers
             {
                 _logger.LogInformation($"Fetching category with ID: {id}");
                 CategoryDTO category = await _categoryRepo.GetCategoryByIdAsync(id);
-                if (category == null)
+                if (category.Id == 0)
                 {
                     _logger.LogWarning($"Category with ID: {id} not found.");
                     return NotFound($"Category with ID: {id} not found.");

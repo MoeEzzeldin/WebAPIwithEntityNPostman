@@ -143,7 +143,7 @@
   },
   {
     "ContainingType": "SqlApiPostman.Controllers.ProductController",
-    "Method": "CreateProductAsync",
+    "Method": "AddProductAsync",
     "RelativePath": "Product",
     "HttpMethod": "POST",
     "IsController": true,
@@ -185,7 +185,7 @@
   },
   {
     "ContainingType": "SqlApiPostman.Controllers.ProductController",
-    "Method": "GetProductAsync",
+    "Method": "GetProductByIdAsync",
     "RelativePath": "Product/{id}",
     "HttpMethod": "GET",
     "IsController": true,

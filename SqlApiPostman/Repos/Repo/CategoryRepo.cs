@@ -58,9 +58,9 @@ namespace SqlApiPostman.Repos.Repo
                 IQueryable<Category> query = _context.Categories.AsNoTracking().Where(c => c.Id == id); ;
 
                 // execute the query and get the first or default result
-                Category category = await query.FirstOrDefaultAsync();
+                Category? category = await query.FirstOrDefaultAsync();
 
-                if (category == null)
+                if (category == null || category.Id == 0)
                 {
                     _logger.LogWarning($"Category with ID: {id} not found.");
                     return new CategoryDTO();
