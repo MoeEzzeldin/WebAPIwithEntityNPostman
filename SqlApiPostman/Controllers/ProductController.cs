@@ -85,7 +85,6 @@ namespace SqlApiPostman.Controllers
                 return StatusCode(404, "Product not found");
             }
         }
-
         /// <summary>
         /// Adds a new product to the MSSQL ProductRepo.
         /// </summary>
@@ -94,7 +93,6 @@ namespace SqlApiPostman.Controllers
         [HttpPost]
         public async Task<ActionResult<ProductDTO>> AddProductAsync([FromBody] ProductDTO product)
         {
-
             if (product == null)
             {
                 _logger.LogError("Product data is null or invalid for creation.");

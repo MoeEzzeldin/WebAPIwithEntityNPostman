@@ -50,7 +50,6 @@ namespace SqlApiPostman.Controllers
                 throw new Exception("An error occurred while fetching categories.", ex);
             }
         }
-
         /// <summary>
         /// Fetches a specific category by ID from the MSSQL CategoryRepo.
         /// </summary>
@@ -86,7 +85,6 @@ namespace SqlApiPostman.Controllers
                 return StatusCode(404, "Category Not Found");
             }
         }
-
         /// <summary>
         /// Adds a new category to the MSSQL CategoryRepo.
         /// </summary>
@@ -118,7 +116,6 @@ namespace SqlApiPostman.Controllers
                 return StatusCode(500, "Internal server error");
             }
         }
-
         /// <summary>
         /// Updates an existing category in the MSSQL CategoryRepo.
         /// </summary>
@@ -150,7 +147,6 @@ namespace SqlApiPostman.Controllers
                 return StatusCode(500, "Internal server error");
             }
         }
-
         /// <summary>
         /// Deletes a category by ID from the MSSQL CategoryRepo.
         /// </summary>
@@ -168,7 +164,6 @@ namespace SqlApiPostman.Controllers
             {
                 if(await _categoryRepo.GetCategoryByIdAsync(id) != null)
                 {
-                    // Assuming the repo has a method to delete by ID
                     bool isDeleted = await _categoryRepo.DeleteCategoryAsync(id);
                     if (!isDeleted)
                     {
