@@ -108,7 +108,7 @@ namespace SqlApiPostman.Controllers
                     return BadRequest("Failed to add the category.");
                 }
                 _logger.LogInformation($"New category added with ID: {newCategoryId}");
-                return CreatedAtAction(nameof(GetCategoryById), new { id = newCategoryId }, newCategoryId); // 201 Created
+                return CreatedAtAction(nameof(GetCategoryById), new { id = newCategoryId }, newCategoryId);
             }
             catch (Exception ex)
             {
@@ -139,7 +139,7 @@ namespace SqlApiPostman.Controllers
                     return NotFound($"No category was updated with ID: {categoryDTO.Id}");
                 }
                 _logger.LogInformation($"Category with ID: {categoryDTO.Id} updated successfully.");
-                return NoContent(); // 204 No Content
+                return NoContent(); 
             }
             catch (Exception ex)
             {

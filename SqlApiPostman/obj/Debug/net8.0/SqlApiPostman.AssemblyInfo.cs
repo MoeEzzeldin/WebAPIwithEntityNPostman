@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SqlApiPostman")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dfed689ee6b9f1d1b24f6eb10de2c2ba82b991fe")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9973e8125a9dd4fdf151928e0847d5685dc73426")]
 [assembly: System.Reflection.AssemblyProductAttribute("SqlApiPostman")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SqlApiPostman")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

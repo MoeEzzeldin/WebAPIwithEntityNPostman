@@ -9,7 +9,6 @@
         public int StockQuantity { get; set; }
         // Foreign key for Category
         public int CategoryId { get; set; }
-        // Navigation property for related category
         public Category Category { get; set; } = new Category();
 
     }

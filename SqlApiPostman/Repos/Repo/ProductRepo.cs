@@ -29,9 +29,7 @@ namespace SqlApiPostman.Repos.Repo
             try
             {
                 _logger.LogInformation("Fetching all products from the database.");
-                // Build the query to fetch all products, including their categories
                 IQueryable<Product> query = _context.Products.Include(p => p.Category).AsNoTracking(); ;
-                // Execute the query and map the results to DTOs
                 return _mapper.Map<IEnumerable<ProductDTO>>(await query.ToListAsync());
 
             }
@@ -55,7 +53,6 @@ namespace SqlApiPostman.Repos.Repo
             {
                 _logger.LogInformation($"Fetching product with ID: {id} from the database.");
                 IQueryable<Product> query = _context.Products.Include(p => p.Category).AsNoTracking().Where(p => p.Id == id);
-                // Execute the query and get the first or default result
                 Product? product = await query.FirstOrDefaultAsync();
                 if (product == null || product.Id == 0)
                 {
@@ -117,10 +114,9 @@ namespace SqlApiPostman.Repos.Repo
                 if (existingProduct == null)
                 {
                     _logger.LogWarning($"Product with ID: {productDTO.Id} not found for update.");
-                    return 0; // or throw an exception if preferred
+                    return 0; 
                 }
 
-                // Map the updated properties from DTO to Entity
                 _mapper.Map(productDTO, existingProduct);
                 int rowsAffected = await _context.SaveChangesAsync();
 
@@ -148,7 +144,7 @@ namespace SqlApiPostman.Repos.Repo
                 if (productToDelete == null)
                 {
                     _logger.LogWarning($"Product with ID: {id} not found for deletion.");
-                    return false; // or throw an exception if preferred
+                    return productToDelete != null; // Return false if not found
                 }
                 _context.Products.Remove(productToDelete);
                 return await _context.SaveChangesAsync() > 0;

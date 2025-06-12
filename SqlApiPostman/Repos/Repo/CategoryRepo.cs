@@ -30,9 +30,7 @@ namespace SqlApiPostman.Repos.Repo
             try
             {
                 _logger.LogInformation("Fetching all categories from the database.");
-                // build the query to fetch all categories
                 IQueryable<Category> query = _context.Categories.Include(p => p.Products).AsNoTracking(); ;
-                // execute the query and map the results to DTOs
                 return _mapper.Map<IEnumerable<CategoryDTO>>(await query.ToListAsync());
             }
             catch (Exception ex)
@@ -57,7 +55,6 @@ namespace SqlApiPostman.Repos.Repo
 
                 IQueryable<Category> query = _context.Categories.AsNoTracking().Where(c => c.Id == id); ;
 
-                // execute the query and get the first or default result
                 Category? category = await query.FirstOrDefaultAsync();
 
                 if (category == null || category.Id == 0)
@@ -127,7 +124,6 @@ namespace SqlApiPostman.Repos.Repo
                     return 0;
                 }
 
-                // Map updated fields from DTO to entity
                 _mapper.Map(categoryDTO, existingCategory);
                 int rowsAffected = await _context.SaveChangesAsync();
 
